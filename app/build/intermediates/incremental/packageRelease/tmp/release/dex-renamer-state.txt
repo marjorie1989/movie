@@ -1,0 +1,10 @@
+#Tue Mar 07 10:26:43 CST 2023
+path.2=classes3.dex
+path.1=classes2.dex
+path.0=classes.dex
+renamed.2=classes3.dex
+renamed.1=classes2.dex
+renamed.0=classes.dex
+base.2=D\:\\axys6.5.1\\app\\build\\intermediates\\dex\\release\\shrunkDex\\classes3.dex
+base.1=D\:\\axys6.5.1\\app\\build\\intermediates\\dex\\release\\shrunkDex\\classes2.dex
+base.0=D\:\\axys6.5.1\\app\\build\\intermediates\\dex\\release\\shrunkDex\\classes.dex

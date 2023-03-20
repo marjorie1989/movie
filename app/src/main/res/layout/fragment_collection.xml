@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.home.HomeFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="85dp">
+
+        <ImageView
+            android:id="@+id/iv_home_top_bg"
+            android:layout_width="match_parent"
+            android:background="@drawable/as2cs_ril89"
+            android:scaleType="fitXY"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:paddingTop="20dp"
+            android:text="私人影院"
+            android:textColor="#FFDAC8"
+            android:textSize="38sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvCollection"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+</LinearLayout>

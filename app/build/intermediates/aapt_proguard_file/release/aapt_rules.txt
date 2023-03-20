@@ -1,0 +1,1304 @@
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:102
+-keep class androidx.core.app.CoreComponentFactory { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:314
+-keep class androidx.core.content.FileProvider { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:815
+-keep class androidx.room.MultiInstanceInvalidationService { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:102
+-keep class cn.lvdou.vod.App { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:254
+-keep class cn.lvdou.vod.MainActivity { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:304
+-keep class cn.lvdou.vod.MergeTestActivity2 { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:301
+-keep class cn.lvdou.vod.TestActivity2 { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:303
+-keep class cn.lvdou.vod.TestAes { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:306
+-keep class cn.lvdou.vod.receiver.ScreenBroadCastReceiver { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:155
+-keep class cn.lvdou.vod.ui.account.AccountSettingActivity { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:154
+-keep class cn.lvdou.vod.ui.account.ChangeNicknameActivity { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:130
+-keep class cn.lvdou.vod.ui.browser.BrowserActivity { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:134
+-keep class cn.lvdou.vod.ui.collection.CollectionActivity { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:142
+-keep class cn.lvdou.vod.ui.down.AllDownloadActivity { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:225
+-keep class cn.lvdou.vod.ui.expand.ExpandCenterActivity { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:221
+-keep class cn.lvdou.vod.ui.expand.MyExpandActivity { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:138
+-keep class cn.lvdou.vod.ui.feedback.FeedbackActivity { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:173
+-keep class cn.lvdou.vod.ui.filtrate.FiltrateActivity { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:262
+-keep class cn.lvdou.vod.ui.game.WebViewActivity { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:163
+-keep class cn.lvdou.vod.ui.home.HomeFristMoreActivity { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:258
+-keep class cn.lvdou.vod.ui.lanuch.LanuchActivity { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:201
+-keep class cn.lvdou.vod.ui.login.ForgetPswActivity { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:197
+-keep class cn.lvdou.vod.ui.login.LoginActivity { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:213
+-keep class cn.lvdou.vod.ui.notice.MessageCenterActivity { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:217
+-keep class cn.lvdou.vod.ui.notice.MessageDetailActivity { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:159
+-keep class cn.lvdou.vod.ui.pay.PayActivity { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:244
+-keep class cn.lvdou.vod.ui.play.CastScreenActivity { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:249
+-keep class cn.lvdou.vod.ui.play.CastScreenActivity2 { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:234
+-keep class cn.lvdou.vod.ui.play.NewPlayActivity { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:229
+-keep class cn.lvdou.vod.ui.play.PlayActivity { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:239
+-keep class cn.lvdou.vod.ui.play.StorePlayActivity { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:286
+-keep class cn.lvdou.vod.ui.play.X5WebActivity { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:282
+-keep class cn.lvdou.vod.ui.play.X5WebViewActivity { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:167
+-keep class cn.lvdou.vod.ui.score.PlayScoreActivity { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:187
+-keep class cn.lvdou.vod.ui.screen.ScreenActivity2 { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:192
+-keep class cn.lvdou.vod.ui.screen.ScreenActivity3 { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:182
+-keep class cn.lvdou.vod.ui.seek.SeekActivity { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:150
+-keep class cn.lvdou.vod.ui.share.ShareActivity { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:266
+-keep class cn.lvdou.vod.ui.specialtopic.TopicDetailActivity { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:290
+-keep class cn.lvdou.vod.ui.start.StartActivity { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:302
+-keep class cn.lvdou.vod.ui.task.MainActivity3 { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:129
+-keep class cn.lvdou.vod.ui.task.MainActivity33 { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:205
+-keep class cn.lvdou.vod.ui.task.TaskActivity { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:209
+-keep class cn.lvdou.vod.ui.task.TaskActivity2 { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:146
+-keep class cn.lvdou.vod.ui.withdraw.GoldWithdrawActivity { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:355
+-keep class com.blankj.utilcode.util.MessengerUtils$ServerService { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:344
+-keep class com.blankj.utilcode.util.Utils$FileProvider4UtilCode { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:337
+-keep class com.blankj.utilcode.util.Utils$TransActivity { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:545
+-keep class com.bytedance.pangle.provider.MainProcessProviderProxy { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:541
+-keep class com.bytedance.pangle.servermanager.MainServerManager { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:115
+-keep class com.bytedance.sdk.openadsdk.TTFileProvider { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:124
+-keep class com.bytedance.sdk.openadsdk.multipro.TTMultiProvider { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:517
+-keep class com.bytedance.sdk.openadsdk.stub.activity.Stub_Activity { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:529
+-keep class com.bytedance.sdk.openadsdk.stub.activity.Stub_SingleTask_Activity { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:522
+-keep class com.bytedance.sdk.openadsdk.stub.activity.Stub_SingleTask_Activity_T { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:490
+-keep class com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Activity { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:503
+-keep class com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Activity_T { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:510
+-keep class com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Landscape_Activity { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:496
+-keep class com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:536
+-keep class com.bytedance.sdk.openadsdk.stub.server.DownloaderServerManager { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:391
+-keep class com.journeyapps.barcodescanner.CaptureActivity { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:633
+-keep class com.kuaishou.weapon.WeaponRECE { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:644
+-keep class com.kuaishou.weapon.WeaponS { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:793
+-keep class com.kwad.sdk.api.proxy.VideoWallpaperService { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:805
+-keep class com.kwad.sdk.api.proxy.app.AdSdkFileProvider { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:655
+-keep class com.kwad.sdk.api.proxy.app.AdWebViewActivity { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:777
+-keep class com.kwad.sdk.api.proxy.app.BaseFragmentActivity$DeveloperConfigActivity { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:710
+-keep class com.kwad.sdk.api.proxy.app.BaseFragmentActivity$EpisodeDetailActivity { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:714
+-keep class com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity1 { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:753
+-keep class com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity10 { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:719
+-keep class com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity2 { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:724
+-keep class com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity3 { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:729
+-keep class com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity4 { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:733
+-keep class com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity5 { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:737
+-keep class com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity6 { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:741
+-keep class com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity7 { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:745
+-keep class com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity8 { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:749
+-keep class com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity9 { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:767
+-keep class com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivitySingleInstance1 { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:772
+-keep class com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivitySingleInstance2 { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:757
+-keep class com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivitySingleTop1 { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:762
+-keep class com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivitySingleTop2 { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:694
+-keep class com.kwad.sdk.api.proxy.app.BaseFragmentActivity$GoodsPlayBackActivity { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:685
+-keep class com.kwad.sdk.api.proxy.app.BaseFragmentActivity$KsTrendsActivity { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:690
+-keep class com.kwad.sdk.api.proxy.app.BaseFragmentActivity$ProfileHomeActivity { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:698
+-keep class com.kwad.sdk.api.proxy.app.BaseFragmentActivity$ProfileVideoDetailActivity { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:706
+-keep class com.kwad.sdk.api.proxy.app.BaseFragmentActivity$TubeDetailActivity { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:702
+-keep class com.kwad.sdk.api.proxy.app.BaseFragmentActivity$TubeProfileActivity { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:786
+-keep class com.kwad.sdk.api.proxy.app.DownloadService { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:680
+-keep class com.kwad.sdk.api.proxy.app.FeedDownloadActivity { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:785
+-keep class com.kwad.sdk.api.proxy.app.FileDownloadService$SeparateProcessService { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:784
+-keep class com.kwad.sdk.api.proxy.app.FileDownloadService$SharedMainProcessService { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:675
+-keep class com.kwad.sdk.api.proxy.app.KSRewardLandScapeVideoActivity { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:665
+-keep class com.kwad.sdk.api.proxy.app.KsFullScreenLandScapeVideoActivity { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:660
+-keep class com.kwad.sdk.api.proxy.app.KsFullScreenVideoActivity { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:670
+-keep class com.kwad.sdk.api.proxy.app.KsRewardVideoActivity { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:789
+-keep class com.kwad.sdk.api.proxy.app.ServiceProxyRemote { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:405
+-keep class com.liuwei.android.upnpcast.service.NLUpnpCastService { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:379
+-keep class com.luck.picture.lib.PictureExternalPreviewActivity { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:361
+-keep class com.luck.picture.lib.PictureFileProvider { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:382
+-keep class com.luck.picture.lib.PicturePlayAudioActivity { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:374
+-keep class com.luck.picture.lib.PicturePreviewActivity { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:371
+-keep class com.luck.picture.lib.PictureSelectorActivity { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:375
+-keep class com.luck.picture.lib.PictureVideoPlayActivity { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:388
+-keep class com.lxj.xpermission.XPermission$PermissionActivity { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:463
+-keep class com.qq.e.ads.ADActivity { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:628
+-keep class com.qq.e.ads.DialogActivity { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:472
+-keep class com.qq.e.ads.LandscapeADActivity { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:467
+-keep class com.qq.e.ads.PortraitADActivity { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:618
+-keep class com.qq.e.ads.RewardvideoLandscapeADActivity { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:609
+-keep class com.qq.e.ads.RewardvideoPortraitADActivity { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:458
+-keep class com.qq.e.comm.DownloadService { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:448
+-keep class com.qq.e.comm.GDTFileProvider { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:556
+-keep class com.ss.android.downloadlib.activity.JumpKllkActivity { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:552
+-keep class com.ss.android.downloadlib.activity.TTDelegateActivity { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:551
+-keep class com.ss.android.downloadlib.addownload.compliance.AppDetailInfoActivity { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:550
+-keep class com.ss.android.downloadlib.addownload.compliance.AppPrivacyPolicyActivity { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:561
+-keep class com.ss.android.downloadlib.core.download.DownloadReceiver { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:562
+-keep class com.ss.android.socialbase.appdownloader.DownloadHandlerService { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:587
+-keep class com.ss.android.socialbase.appdownloader.RetryJobSchedulerService { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:578
+-keep class com.ss.android.socialbase.appdownloader.view.DownloadTaskDeleteActivity { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:582
+-keep class com.ss.android.socialbase.appdownloader.view.JumpUnknownSourceActivity { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:601
+-keep class com.ss.android.socialbase.downloader.downloader.DownloadService { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:592
+-keep class com.ss.android.socialbase.downloader.downloader.IndependentProcessDownloadService { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:608
+-keep class com.ss.android.socialbase.downloader.downloader.SqlDownloadCacheService { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:602
+-keep class com.ss.android.socialbase.downloader.impls.DownloadHandleService { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:600
+-keep class com.ss.android.socialbase.downloader.notification.DownloadNotificationService { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:270
+-keep class com.tencent.smtt.sdk.VideoActivity { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:381
+-keep class com.yalantis.ucrop.PictureMultiCuttingActivity { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:380
+-keep class com.yalantis.ucrop.UCropActivity { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:407
+-keep class com.youxiao.ssp.activity.SSPGameActivity { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:417
+-keep class com.youxiao.ssp.activity.SSPSuperTaskActivity { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:412
+-keep class com.youxiao.ssp.activity.SSPTaskActivity { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:422
+-keep class com.youxiao.ssp.activity.SSPVideoContentActivity { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:477
+-keep class com.youxiao.ssp.ad.activity.SSPAdDetailsActivity { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:480
+-keep class com.youxiao.ssp.ad.activity.SSPRewardVideoActivity { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:439
+-keep class com.youxiao.ssp.ad.provider.GDTFileProvider { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:434
+-keep class com.youxiao.ssp.base.activity.SSPExtActivity { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:430
+-keep class com.youxiao.ssp.base.activity.SSPWebActivity { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:428
+-keep class com.youxiao.ssp.base.receiver.SSPNtReceiver { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:332
+-keep class jaygoo.library.m3u8downloader.service.VideoService { <init>(); }
+# Referenced at D:\axys6.5.2\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:399
+-keep class me.yokeyword.eventbusactivityscope.RuntimeTrojanProvider { <init>(); }
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\43e96d8945af30bba2948fb21f7f8d16\appcompat-1.2.0\res\layout\abc_alert_dialog_button_bar_material.xml:43
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\43e96d8945af30bba2948fb21f7f8d16\appcompat-1.2.0\res\layout\abc_alert_dialog_material.xml:52
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\43e96d8945af30bba2948fb21f7f8d16\appcompat-1.2.0\res\layout\abc_alert_dialog_title_material.xml:57
+-keep class android.widget.Space { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\43e96d8945af30bba2948fb21f7f8d16\appcompat-1.2.0\res\layout\abc_select_dialog_material.xml:23
+-keep class androidx.appcompat.app.AlertController$RecycleListView { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\43e96d8945af30bba2948fb21f7f8d16\appcompat-1.2.0\res\layout\abc_action_menu_item_layout.xml:17
+-keep class androidx.appcompat.view.menu.ActionMenuItemView { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\43e96d8945af30bba2948fb21f7f8d16\appcompat-1.2.0\res\layout\abc_expanded_menu_layout.xml:17
+-keep class androidx.appcompat.view.menu.ExpandedMenuView { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\43e96d8945af30bba2948fb21f7f8d16\appcompat-1.2.0\res\layout\abc_cascading_menu_item_layout.xml:20
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\43e96d8945af30bba2948fb21f7f8d16\appcompat-1.2.0\res\layout\abc_list_menu_item_layout.xml:17
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\43e96d8945af30bba2948fb21f7f8d16\appcompat-1.2.0\res\layout\abc_popup_menu_item_layout.xml:17
+-keep class androidx.appcompat.view.menu.ListMenuItemView { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\43e96d8945af30bba2948fb21f7f8d16\appcompat-1.2.0\res\layout-v26\abc_screen_toolbar.xml:27
+-keep class androidx.appcompat.widget.ActionBarContainer { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\43e96d8945af30bba2948fb21f7f8d16\appcompat-1.2.0\res\layout\abc_action_mode_bar.xml:19
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\43e96d8945af30bba2948fb21f7f8d16\appcompat-1.2.0\res\layout-v26\abc_screen_toolbar.xml:44
+-keep class androidx.appcompat.widget.ActionBarContextView { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\43e96d8945af30bba2948fb21f7f8d16\appcompat-1.2.0\res\layout-v26\abc_screen_toolbar.xml:17
+-keep class androidx.appcompat.widget.ActionBarOverlayLayout { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\43e96d8945af30bba2948fb21f7f8d16\appcompat-1.2.0\res\layout\abc_action_menu_layout.xml:17
+-keep class androidx.appcompat.widget.ActionMenuView { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\43e96d8945af30bba2948fb21f7f8d16\appcompat-1.2.0\res\layout\abc_activity_chooser_view.xml:19
+-keep class androidx.appcompat.widget.ActivityChooserView$InnerLayout { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\43e96d8945af30bba2948fb21f7f8d16\appcompat-1.2.0\res\layout\abc_alert_dialog_material.xml:18
+-keep class androidx.appcompat.widget.AlertDialogLayout { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\8fc27c4640481db5310b7db441cb6f31\jetified-xpopup-1.8.10-x\res\layout\_xpopup_center_impl_confirm.xml:25
+-keep class androidx.appcompat.widget.AppCompatEditText { <init>(...); }
+
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\item_card_child.xml:15
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\item_card_child2.xml:15
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\item_card_child_lis.xml:15
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\item_horizontal.xml:15
+-keep class androidx.appcompat.widget.AppCompatImageView { <init>(...); }
+
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\activity_seek.xml:121
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\item_card.xml:28
+# Referenced at D:\axys6.5.2\app\src\main\res\layout-v23\item_card2.xml:16
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\item_card_child.xml:46
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\item_card_child2.xml:42
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\item_card_child_lis.xml:36
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\item_card_first_child.xml:36
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\item_horizontal.xml:24
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\item_playinfo.xml:106
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\item_playlist.xml:7
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\item_scroller.xml:26
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\item_top.xml:15
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\item_top_child.xml:35
+-keep class androidx.appcompat.widget.AppCompatTextView { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\43e96d8945af30bba2948fb21f7f8d16\appcompat-1.2.0\res\layout\abc_alert_dialog_button_bar_material.xml:26
+-keep class androidx.appcompat.widget.ButtonBarLayout { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\43e96d8945af30bba2948fb21f7f8d16\appcompat-1.2.0\res\layout\abc_screen_content_include.xml:19
+-keep class androidx.appcompat.widget.ContentFrameLayout { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\43e96d8945af30bba2948fb21f7f8d16\appcompat-1.2.0\res\layout\abc_alert_dialog_title_material.xml:45
+-keep class androidx.appcompat.widget.DialogTitle { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\43e96d8945af30bba2948fb21f7f8d16\appcompat-1.2.0\res\layout\abc_screen_simple_overlay_action_mode.xml:23
+-keep class androidx.appcompat.widget.FitWindowsFrameLayout { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\43e96d8945af30bba2948fb21f7f8d16\appcompat-1.2.0\res\layout\abc_dialog_title_material.xml:22
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\43e96d8945af30bba2948fb21f7f8d16\appcompat-1.2.0\res\layout\abc_screen_simple.xml:17
+-keep class androidx.appcompat.widget.FitWindowsLinearLayout { <init>(...); }
+
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\activity_all_download.xml:8
+-keep class androidx.appcompat.widget.LinearLayoutCompat { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\43e96d8945af30bba2948fb21f7f8d16\appcompat-1.2.0\res\layout\abc_search_view.xml:75
+-keep class androidx.appcompat.widget.SearchView$SearchAutoComplete { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\43e96d8945af30bba2948fb21f7f8d16\appcompat-1.2.0\res\layout-v26\abc_screen_toolbar.xml:37
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\tool_bar_layout.xml:2
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\fc051615b91c92f63995e3591311a7c7\jetified-ucrop-v2.2.4\res\layout\ucrop_activity_photobox.xml:6
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\fc051615b91c92f63995e3591311a7c7\jetified-ucrop-v2.2.4\res\layout\ucrop_picture_activity_multi_cutting.xml:10
+-keep class androidx.appcompat.widget.Toolbar { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\43e96d8945af30bba2948fb21f7f8d16\appcompat-1.2.0\res\layout\abc_screen_simple.xml:25
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\43e96d8945af30bba2948fb21f7f8d16\appcompat-1.2.0\res\layout\abc_screen_simple_overlay_action_mode.xml:32
+-keep class androidx.appcompat.widget.ViewStubCompat { <init>(...); }
+
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\fragment_user.xml:411
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\fragment_userb.xml:182
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\item_collection2.xml:2
+# Referenced at D:\axys6.5.2\m3u8library\build\intermediates\packaged_res\release\layout\item_m3u8_item.xml:2
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\item_video.xml:2
+-keep class androidx.cardview.widget.CardView { <init>(...); }
+
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\tool_bar_layout.xml:24
+-keep class androidx.constraintlayout.utils.widget.ImageFilterButton { <init>(...); }
+
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\activity_agreement.xml:2
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\activity_all_download.xml:2
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\activity_filtrate.xml:2
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\activity_forget_psw.xml:2
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\activity_login.xml:107
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\activity_main.xml:2
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\activity_main3.xml:2
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\activity_main33.xml:2
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\activity_message_detail.xml:49
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\activity_new_play.xml:2
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\activity_store_play.xml:2
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\activity_test2.xml:2
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\activity_test_merge2.xml:2
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\fragment_home.xml:2
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\item_msg_list.xml:2
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\item_my_expand.xml:2
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\item_playlist.xml:2
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\item_rank_card.xml:2
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\item_task.xml:2
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\item_task2.xml:2
+# Referenced at D:\axys6.5.2\newAv\build\intermediates\packaged_res\release\layout\layout_av_controller.xml:2
+# Referenced at D:\axys6.5.2\newAv\build\intermediates\packaged_res\release\layout\layout_h_html_ad_view.xml:2
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\layout_html_ad_view.xml:2
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\layout_rank_popup.xml:2
+-keep class androidx.constraintlayout.widget.ConstraintLayout { <init>(...); }
+
+# Referenced at D:\axys6.5.2\newAv\build\intermediates\packaged_res\release\layout\layout_av_controller.xml:9
+-keep class androidx.constraintlayout.widget.Guideline { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\9cf24d13818a0e33d206eeaa8f1dec60\material-1.0.0\res\layout\design_bottom_sheet_dialog.xml:26
+-keep class androidx.coordinatorlayout.widget.CoordinatorLayout { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\43e96d8945af30bba2948fb21f7f8d16\appcompat-1.2.0\res\layout\abc_alert_dialog_material.xml:41
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\activity_seek.xml:98
+-keep class androidx.core.widget.NestedScrollView { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_interstitial_download.xml:63
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_interstitial_native_above.xml:19
+-keep class androidx.legacy.widget.Space { <init>(...); }
+
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\activity_coin_withdraw.xml:364
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\activity_collection.xml:71
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\activity_feedback.xml:212
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\activity_message_center.xml:91
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\activity_my_expand.xml:118
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\activity_play.xml:22
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\activity_play_score.xml:73
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\activity_screen.xml:78
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\activity_screen2.xml:76
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\activity_screen3.xml:16
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\activity_seek.xml:174
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\activity_task.xml:62
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\activity_task2.xml:103
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\activity_topicdetail.xml:83
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\cache_all_list_layout.xml:54
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\dialog_cast_screen.xml:39
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\dialog_play_list.xml:2
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\dialog_speed_list.xml:7
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\dlan_ui_device_pop_layout.xml:35
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\fragment_collection.xml:38
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\fragment_home_first_child.xml:7
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\fragment_home_other_child.xml:7
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\fragment_live.xml:39
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\fragment_play_detail.xml:15
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\fragment_play_list.xml:76
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\fragment_rank_child.xml:8
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\fragment_user.xml:471
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\fragment_userb.xml:595
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\item_card.xml:54
+# Referenced at D:\axys6.5.2\app\src\main\res\layout-v23\item_card2.xml:37
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\item_filtrate.xml:2
+# Referenced at D:\axys6.5.2\m3u8library\build\intermediates\packaged_res\release\layout\item_list_layout.xml:8
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\item_playinfo.xml:468
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\item_playlist.xml:44
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\item_recommend.xml:57
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\item_rv.xml:2
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\item_scroller.xml:45
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\item_top.xml:54
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\layout_four_rv.xml:7
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\cb40f03c6f79eaf48d59c47c1c9c2e5a\jetified-picture_library-v2.2.4\res\layout\picture_selector.xml:73
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\cb40f03c6f79eaf48d59c47c1c9c2e5a\jetified-picture_library-v2.2.4\res\layout\picture_window_folder.xml:8
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ttdownloader_activity_app_detail_info.xml:81
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\fc051615b91c92f63995e3591311a7c7\jetified-ucrop-v2.2.4\res\layout\ucrop_picture_activity_multi_cutting.xml:28
+-keep class androidx.recyclerview.widget.RecyclerView { <init>(...); }
+
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\fragment_home_first_child.xml:2
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\fragment_home_other_child.xml:2
+-keep class androidx.swiperefreshlayout.widget.SwipeRefreshLayout { <init>(...); }
+
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\activity_all_download.xml:31
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\activity_pay.xml:126
+# Referenced at D:\axys6.5.2\m3u8library\build\intermediates\packaged_res\release\layout\download_page_layout.xml:24
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\fragment_home.xml:150
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\fragment_rank.xml:152
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\fragment_rank2.xml:82
+-keep class androidx.viewpager.widget.ViewPager { <init>(...); }
+
+# Referenced at D:\axys6.5.2\newAv\build\intermediates\packaged_res\release\layout\layout_av_controller.xml:798
+# Referenced at D:\axys6.5.2\newAv\build\intermediates\packaged_res\release\layout\layout_h_html_ad_view.xml:9
+-keep class cn.lvdou.av.ad.AdWebView { <init>(...); }
+
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\activity_play.xml:11
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\activity_store_play.xml:10
+-keep class cn.lvdou.av.play.AvVideoView { <init>(...); }
+
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\activity_new_play.xml:32
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\activity_seek.xml:110
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\activity_start.xml:9
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\fragment_play_list.xml:69
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\item_ad.xml:2
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\item_ads.xml:7
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\item_banner.xml:23
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\item_playinfo.xml:488
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\item_scroller.xml:56
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\item_top.xml:66
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\layout_html_ad_view.xml:9
+-keep class cn.lvdou.vod.ad.AdWebView { <init>(...); }
+
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\item_video_source.xml:19
+-keep class cn.lvdou.vod.banner.AudioWaveView { <init>(...); }
+
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\item_banner.xml:11
+-keep class cn.lvdou.vod.banner.BlurBanner { <init>(...); }
+
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\activity_seek.xml:146
+-keep class cn.lvdou.vod.ui.seek.SeekHistoryView { <init>(...); }
+
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\fragment_game.xml:79
+-keep class cn.lvdou.vod.ui.widget.AutoRunTextView { <init>(...); }
+
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\game_item.xml:13
+-keep class cn.lvdou.vod.ui.widget.RoundImgView { <init>(...); }
+
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\fragment_game.xml:95
+-keep class cn.lvdou.vod.ui.widget.ScrollViewWithListView { <init>(...); }
+
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\activity_play_video.xml:9
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\layout_x5.xml:66
+-keep class cn.lvdou.vod.ui.widget.X5WebView { <init>(...); }
+
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\activity_main.xml:18
+-keep class com.google.android.material.bottomnavigation.BottomNavigationView { <init>(...); }
+
+# Referenced at D:\axys6.5.2\m3u8library\build\intermediates\packaged_res\release\layout\item_m3u8_done_item.xml:2
+-keep class com.google.android.material.card.MaterialCardView { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\9cf24d13818a0e33d206eeaa8f1dec60\material-1.0.0\res\layout\design_bottom_navigation_item.xml:27
+-keep class com.google.android.material.internal.BaselineLayout { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\9cf24d13818a0e33d206eeaa8f1dec60\material-1.0.0\res\layout\design_text_input_password_icon.xml:18
+-keep class com.google.android.material.internal.CheckableImageButton { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\9cf24d13818a0e33d206eeaa8f1dec60\material-1.0.0\res\layout\design_navigation_item.xml:17
+-keep class com.google.android.material.internal.NavigationMenuItemView { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\9cf24d13818a0e33d206eeaa8f1dec60\material-1.0.0\res\layout\design_navigation_menu.xml:17
+-keep class com.google.android.material.internal.NavigationMenuView { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\9cf24d13818a0e33d206eeaa8f1dec60\material-1.0.0\res\layout\design_layout_snackbar.xml:18
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\9cf24d13818a0e33d206eeaa8f1dec60\material-1.0.0\res\layout\mtrl_layout_snackbar.xml:18
+-keep class com.google.android.material.snackbar.Snackbar$SnackbarLayout { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\9cf24d13818a0e33d206eeaa8f1dec60\material-1.0.0\res\layout\design_layout_snackbar_include.xml:18
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\9cf24d13818a0e33d206eeaa8f1dec60\material-1.0.0\res\layout\mtrl_layout_snackbar_include.xml:18
+-keep class com.google.android.material.snackbar.SnackbarContentLayout { <init>(...); }
+
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\activity_all_download.xml:15
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\activity_pay.xml:109
+# Referenced at D:\axys6.5.2\m3u8library\build\intermediates\packaged_res\release\layout\download_page_layout.xml:9
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\fragment_home.xml:122
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\fragment_rank.xml:93
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\fragment_rank2.xml:65
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\item_playinfo.xml:21
+-keep class com.google.android.material.tabs.TabLayout { <init>(...); }
+
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\layout_score.xml:20
+-keep class com.hedgehog.ratingbar.RatingBar { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\691aaa6f5a31f84253dd07c9f94ad652\jetified-zxing-android-embedded-3.6.0\res\layout\zxing_barcode_scanner.xml:4
+-keep class com.journeyapps.barcodescanner.BarcodeView { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\691aaa6f5a31f84253dd07c9f94ad652\jetified-zxing-android-embedded-3.6.0\res\layout\zxing_capture.xml:23
+-keep class com.journeyapps.barcodescanner.DecoratedBarcodeView { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\691aaa6f5a31f84253dd07c9f94ad652\jetified-zxing-android-embedded-3.6.0\res\layout\zxing_barcode_scanner.xml:9
+-keep class com.journeyapps.barcodescanner.ViewfinderView { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_horizontal_feed_home_layout.xml:8
+-keep class com.kwad.horizontal.widget.HorizontalRefreshLayout { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_horizontal_refresh_view.xml:2
+-keep class com.kwad.horizontal.widget.HorizontalRefreshView { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_activity_feedback.xml:138
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_content_alliance_comment_like_button_2.xml:7
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_content_alliance_home_fragment.xml:36
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_content_alliance_hot_shoot_refresh_view_2.xml:17
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_content_alliance_loading_detail.xml:9
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_content_alliance_photo_like_button_2.xml:15
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_content_half_page_loading.xml:29
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_content_page_load_more.xml:7
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_content_page_loading.xml:71
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_content_page_loading_more.xml:7
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_content_slide_home_profile_loading_more.xml:7
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_content_slide_left_guide.xml:15
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_content_slide_up_guide.xml:15
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_coupon_entry_layout.xml:87
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_horizontal_refresh_view.xml:7
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_horizontal_video_player_view_layout.xml:44
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_photo_newui_author_icon_view.xml:10
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_profile_page_loading.xml:29
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_tube_detail_grid_footer.xml:19
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_tube_fragment_loading_layout.xml:67
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_view_entryphoto.xml:36
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_view_entryphoto4.xml:54
+-keep class com.kwad.lottie.LottieAnimationView { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_activity_fullscreen_video.xml:218
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_activity_reward_video.xml:316
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_ad_land_page_native.xml:73
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_content_alliance_detail_ad_2.xml:99
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_content_interstitial_ad_layout.xml:42
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_draw_layout.xml:159
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_interstitial.xml:56
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_reflux_card_left.xml:86
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_reflux_card_top.xml:60
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_splash_screen.xml:89
+-keep class com.kwad.sdk.compliance.widget.ComplianceTextView { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_coupon_entry_layout.xml:2
+-keep class com.kwad.sdk.contentalliance.coupon.entry.CouponEntryContainer { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_coupon_entry_layout.xml:7
+-keep class com.kwad.sdk.contentalliance.coupon.entry.CouponEntryProgress { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_photo_comment_list_header.xml:8
+-keep class com.kwad.sdk.contentalliance.detail.ad.presenter.comment.CommentAdItemView { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_content_alliance_detail_ad_2.xml:122
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_content_alliance_detail_photo_2.xml:187
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_content_alliance_detail_wallpaper.xml:93
+-keep class com.kwad.sdk.contentalliance.detail.ad.presenter.comment.CommentBottomAdPanel { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_content_ad_web_front_page.xml:2
+-keep class com.kwad.sdk.contentalliance.detail.ad.presenter.frontpage.AdWebFrontPage { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_photo_comment_item_2.xml:84
+-keep class com.kwad.sdk.contentalliance.detail.photo.comment.CommentLikeButton { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_content_alliance_detail_ad_2.xml:116
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_content_alliance_detail_photo_2.xml:180
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_content_alliance_detail_wallpaper.xml:87
+-keep class com.kwad.sdk.contentalliance.detail.photo.comment.CommentListPanel { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_content_alliance_detail_ad_bottom_left.xml:77
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_content_alliance_detail_photo_bottom_left.xml:65
+-keep class com.kwad.sdk.contentalliance.detail.photo.newui.MarqueeView { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_content_alliance_detail_photo_2.xml:38
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_content_alliance_detail_wallpaper.xml:43
+-keep class com.kwad.sdk.contentalliance.detail.photo.newui.WaterMarkView2 { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_content_related_panel_layout.xml:2
+-keep class com.kwad.sdk.contentalliance.detail.photo.related.RelatedVideoPanel { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_activity_ad_land_page.xml:22
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_activity_fullscreen_video.xml:12
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_activity_land_page_horizontal.xml:22
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_activity_reward_app_task_landscape.xml:13
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_content_alliance_detail_photo_common.xml:20
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_draw_layout.xml:12
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_horizontal_video_player_view_layout.xml:17
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_native_video_layout.xml:12
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_reward_video_area.xml:11
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_splash_screen.xml:19
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_view_entryphoto_video_player.xml:7
+-keep class com.kwad.sdk.contentalliance.detail.video.DetailVideoView { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_progress_panel_layout.xml:14
+-keep class com.kwad.sdk.contentalliance.detail.wallpaper.widget.SectorProgressView { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_content_alliance_home_fragment.xml:10
+-keep class com.kwad.sdk.contentalliance.home.swipe.SwipeLayout { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_content_alliance_home_fragment.xml:30
+-keep class com.kwad.sdk.contentalliance.home.viewpager.SlidePlayViewPager { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_trend_list_panel_layout.xml:2
+-keep class com.kwad.sdk.contentalliance.hotspot.view.HotspotPanelLayout { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_trends_rolling_container.xml:31
+-keep class com.kwad.sdk.contentalliance.hotspot.view.TrendsRollingTextContainer { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_content_alliance_home_fragment.xml:42
+-keep class com.kwad.sdk.contentalliance.refreshview.KsAdHotRefreshView { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_content_alliance_hot_shoot_refresh_view_2.xml:2
+-keep class com.kwad.sdk.contentalliance.refreshview.KsAdHotShootRefreshView { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_content_alliance_shoot_refresh_view.xml:2
+-keep class com.kwad.sdk.contentalliance.refreshview.ShootRefreshView { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_tube_trend_scroll_view_episode_photo.xml:2
+-keep class com.kwad.sdk.contentalliance.tube.view.EpisodePhotoView { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_tube_trend_item_container.xml:110
+-keep class com.kwad.sdk.contentalliance.tube.view.TrendTubeEpisodeViewPager { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_tube_trend_item_container.xml:102
+-keep class com.kwad.sdk.contentalliance.tube.view.TrendTubeScrollView { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_tube_detail_info_header.xml:69
+-keep class com.kwad.sdk.contentalliance.tube.view.WarpLinearLayout { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_content_alliance_more_report_dislike_panel.xml:44
+-keep class com.kwad.sdk.contentalliance.widget.FlowLayout { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_content_slide_left_guide.xml:2
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_content_slide_up_guide.xml:2
+-keep class com.kwad.sdk.contentalliance.widget.InterceptRelativeLayout { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_content_alliance_comment_list_panel_2.xml:58
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_content_related_panel_layout.xml:65
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_horizontal_detail_video_related_layout.xml:15
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_live_ec_sku_panel.xml:58
+-keep class com.kwad.sdk.contentalliance.widget.KSHalfPageLoadingView { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_content_alliance_home_fragment.xml:65
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_content_feed_home_layout.xml:18
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_horizontal_feed_home_layout.xml:30
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_news_detail_fragment.xml:17
+-keep class com.kwad.sdk.contentalliance.widget.KSPageLoadingView { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_profile_fragment_home.xml:53
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_profile_fragment_tab_video.xml:16
+-keep class com.kwad.sdk.contentalliance.widget.KSProfilePageLoadingView { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_profile_fragment_home.xml:60
+-keep class com.kwad.sdk.contentalliance.widget.KSProfileShieldingView { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_content_alliance_detail_photo_common.xml:6
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_content_alliance_home_bottom_ad_banner.xml:2
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_horizontal_video_player_view_layout.xml:11
+-keep class com.kwad.sdk.contentalliance.widget.KsAdFrameLayout { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_content_ad_web_front_page.xml:19
+-keep class com.kwad.sdk.contentalliance.widget.NestedChildWebView { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_content_ad_web_front_page.xml:13
+-keep class com.kwad.sdk.contentalliance.widget.NestedParentRelativeLayout { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_content_alliance_photo_more_button_2.xml:29
+-keep class com.kwad.sdk.contentalliance.widget.VerticalMarqueeTextView { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_detail_webview.xml:2
+-keep class com.kwad.sdk.core.page.recycle.DetailWebRecycleView { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_datail_webview_container.xml:8
+-keep class com.kwad.sdk.core.page.recycle.NestedScrollWebView { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_ad_land_page_native.xml:17
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_feed_content_text_right_image.xml:17
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_feed_text_left_image.xml:52
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_feed_text_right_image.xml:19
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_hot_list_item.xml:35
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_view_entryphoto.xml:7
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_view_entryphoto4.xml:25
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_view_entryphoto_ad_bottom_layout.xml:66
+-keep class com.kwad.sdk.core.page.widget.RoundAngleImageView { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_download_progress_layout.xml:9
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_draw_download_bar.xml:7
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_interstitial_download.xml:68
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_interstitial_native_element.xml:115
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_video_actionbar_app_landscape.xml:85
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_video_actionbar_app_portrait.xml:74
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_video_actionbar_landscape_vertical.xml:129
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_video_actionbar_portrait_horizontal.xml:122
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_video_tf_bar_app_landscape.xml:90
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_video_tf_bar_app_portrait_horizontal.xml:78
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_video_tf_bar_app_portrait_vertical.xml:75
+-keep class com.kwad.sdk.core.page.widget.TextProgressBar { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_activity_fullscreen_video.xml:85
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_activity_reward_video.xml:132
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_ad_web_card_layout.xml:8
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_content_alliance_detail_ad_2.xml:57
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_content_alliance_detail_photo_2.xml:92
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_content_alliance_home_bottom_ad_banner.xml:7
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_draw_layout.xml:136
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_horizontal_video_player_view_layout.xml:199
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_news_header_webview_layout.xml:10
+-keep class com.kwad.sdk.core.page.widget.webview.KSApiWebView { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_activity_active_webview.xml:49
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_activity_ad_land_page.xml:61
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_activity_ad_webview.xml:112
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_activity_fullscreen_video.xml:25
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_activity_land_page_horizontal.xml:57
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_activity_playable.xml:11
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_activity_reward_preview.xml:11
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_activity_reward_video.xml:27
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_activity_webview.xml:34
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_ad_landingpage_layout.xml:9
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_aggregate_ad_webview_activity.xml:51
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_content_interstitial_ad_layout.xml:16
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_download_dialog_layout.xml:11
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_feed_webview.xml:11
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_interstitial.xml:33
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_open_coupon_webview_layout.xml:8
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_reflux.xml:86
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_reward_apk_info_card.xml:22
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_reward_video_area.xml:52
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_splash_screen.xml:42
+-keep class com.kwad.sdk.core.page.widget.webview.KsAdWebView { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_activity_fullscreen_video.xml:2
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_activity_playable.xml:2
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_activity_reward_app_task_landscape.xml:2
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_activity_reward_preview.xml:2
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_activity_reward_video.xml:2
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_content_alliance_home_fragment.xml:2
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_download_dialog_layout.xml:2
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_horizontal_detail_video_fragment.xml:2
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_horizontal_video_player_view_layout.xml:2
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_splash_screen.xml:2
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_splash_vplush.xml:2
+-keep class com.kwad.sdk.core.view.AdBaseFrameLayout { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_comment_bottom_ad_panel_layout.xml:2
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_comment_bottom_ad_panel_layout_2.xml:2
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_horizontal_detail_video_fragment.xml:8
+-keep class com.kwad.sdk.core.view.AdBaseLinearLayout { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_content_alliance_detail_ad_2.xml:2
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_content_alliance_detail_photo_2.xml:2
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_content_alliance_detail_wallpaper.xml:2
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_draw_layout.xml:2
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_native_video_layout.xml:2
+-keep class com.kwad.sdk.core.view.AdBasePvFrameLayout { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_content_alliance_detail_ad_bottom_left.xml:98
+-keep class com.kwad.sdk.core.view.AdDownloadProgressBar { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_activity_feed_download.xml:2
+-keep class com.kwad.sdk.core.view.KsAdContainer { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_feed_content_text_right_image.xml:49
+-keep class com.kwad.sdk.core.view.KsRadiusStrokeTextView { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_content_alliance_detail_photo_2.xml:163
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_feed_video.xml:88
+-keep class com.kwad.sdk.core.view.ScaleAnimSeekBar { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_content_alliance_detail_ad_bottom.xml:76
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_draw_card_app.xml:110
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_draw_layout.xml:104
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_draw_video_tailframe.xml:74
+-keep class com.kwad.sdk.draw.view.DrawDownloadProgressBar { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_content_alliance_detail_ad_bottom.xml:86
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_draw_layout.xml:114
+-keep class com.kwad.sdk.draw.view.playcard.DrawCardApp { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_content_alliance_detail_ad_bottom.xml:97
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_draw_layout.xml:125
+-keep class com.kwad.sdk.draw.view.playcard.DrawCardH5 { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_draw_layout.xml:146
+-keep class com.kwad.sdk.draw.view.playend.DrawVideoTailFrame { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_photo_comment_ad_item.xml:54
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_photo_comment_item_2.xml:54
+-keep class com.kwad.sdk.emotion.widget.EmojiTextView { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_view_entryphoto_ad_bottom_layout.xml:10
+-keep class com.kwad.sdk.entry.view.EntryAdConvertButton { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_view_entry_twophoto.xml:2
+-keep class com.kwad.sdk.entry.view.EntryLinearView { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_view_entryphoto.xml:2
+-keep class com.kwad.sdk.entry.view.EntryPhotoView { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_view_entry_gifviewpager.xml:2
+-keep class com.kwad.sdk.entry.view.EntryScrollGifView { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_view_entry_viewpager.xml:2
+-keep class com.kwad.sdk.entry.view.EntryScrollView { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_view_entryphoto4.xml:2
+-keep class com.kwad.sdk.entry.view.EntryTyp4View { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_view_entry_tab.xml:3
+-keep class com.kwad.sdk.entry.view.EntryTypeTabView { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_view_entry_gifviewpager.xml:7
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_view_entry_viewpager.xml:7
+-keep class com.kwad.sdk.entry.view.EntryViewPager { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_activity_reward_video.xml:108
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_feed_content_text_right_image.xml:10
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_feed_text_above_group_image.xml:19
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_feed_text_above_image.xml:19
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_feed_text_above_video.xml:19
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_feed_text_below_image.xml:9
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_feed_text_below_video.xml:9
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_feed_text_immerse_image.xml:2
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_feed_text_left_image.xml:45
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_feed_text_right_image.xml:10
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_feed_video.xml:19
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_feed_webview.xml:2
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_view_entryphoto4.xml:19
+-keep class com.kwad.sdk.feed.widget.base.RatioFrameLayout { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_hot_list_item.xml:2
+-keep class com.kwad.sdk.hotspot.view.HotspotListItemView { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_trend_list_panel_layout.xml:38
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_view_hotspot_entry_layout.xml:7
+-keep class com.kwad.sdk.hotspot.view.HotspotListRecyclerView { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_view_hotspot_entry_layout.xml:2
+-keep class com.kwad.sdk.hotspot.view.HotspotListView { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_profile_fragment_home.xml:11
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_tube_fragment_detail.xml:9
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_tube_fragment_home.xml:9
+-keep class com.kwad.sdk.lib.desigin.KSAppBarLayout { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_profile_fragment_home.xml:2
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_tube_fragment_detail.xml:2
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_tube_fragment_home.xml:2
+-keep class com.kwad.sdk.lib.desigin.KSCoordinatorLayout { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_tube_fragment_detail.xml:25
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_tube_fragment_home.xml:25
+-keep class com.kwad.sdk.lib.widget.recycler.CustomAppBarFlingRecyclerView { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_profile_fragment_home.xml:46
+-keep class com.kwad.sdk.lib.widget.viewpager.NestedScrollViewPager { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_fragment_home_tab_layout.xml:31
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_profile_fragment_home.xml:25
+-keep class com.kwad.sdk.lib.widget.viewpager.tabstrip.PagerSlidingTabStrip { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_reflux.xml:73
+-keep class com.kwad.sdk.reflux.KsRefluxContentView { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_reflux.xml:79
+-keep class com.kwad.sdk.reflux.KsRefluxNativeView { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_activity_reward_video.xml:331
+-keep class com.kwad.sdk.reflux.KsRefluxView { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_draw_card_app.xml:74
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_draw_video_tailframe.xml:42
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_video_actionbar_app_landscape.xml:46
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_video_actionbar_app_portrait.xml:51
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_video_actionbar_landscape_vertical.xml:43
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_video_actionbar_portrait_horizontal.xml:63
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_video_tf_bar_app_landscape.xml:35
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_video_tf_bar_app_portrait_horizontal.xml:29
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_video_tf_bar_app_portrait_vertical.xml:29
+-keep class com.kwad.sdk.reward.widget.AppScoreView { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_reward_task_launch_app_dialog.xml:56
+-keep class com.kwad.sdk.reward.widget.RewardTaskStepView { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_activity_fullscreen_video.xml:69
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_activity_reward_video.xml:72
+-keep class com.kwad.sdk.reward.widget.actionbar.ActionBarAppLandscape { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_activity_fullscreen_video.xml:61
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_activity_reward_video.xml:64
+-keep class com.kwad.sdk.reward.widget.actionbar.ActionBarAppPortrait { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_activity_fullscreen_video.xml:77
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_activity_reward_video.xml:80
+-keep class com.kwad.sdk.reward.widget.actionbar.ActionBarH5 { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_activity_fullscreen_video.xml:43
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_activity_reward_video.xml:45
+-keep class com.kwad.sdk.reward.widget.actionbar.ActionBarLandscapeVertical { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_activity_fullscreen_video.xml:36
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_activity_reward_video.xml:38
+-keep class com.kwad.sdk.reward.widget.actionbar.ActionBarPortraitHorizontal { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_activity_fullscreen_video.xml:165
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_activity_reward_video.xml:224
+-keep class com.kwad.sdk.reward.widget.tailframe.TailFrameLandscapeHorizontal { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_activity_fullscreen_video.xml:171
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_activity_reward_video.xml:230
+-keep class com.kwad.sdk.reward.widget.tailframe.TailFrameLandscapeVertical { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_activity_fullscreen_video.xml:153
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_activity_reward_video.xml:212
+-keep class com.kwad.sdk.reward.widget.tailframe.TailFramePortraitHorizontal { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_activity_fullscreen_video.xml:159
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_activity_reward_video.xml:218
+-keep class com.kwad.sdk.reward.widget.tailframe.TailFramePortraitVertical { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_video_tf_view_landscape_horizontal.xml:16
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_video_tf_view_landscape_vertical.xml:37
+-keep class com.kwad.sdk.reward.widget.tailframe.appbar.TailFrameBarAppLandscape { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_video_tf_view_portrait_horizontal.xml:31
+-keep class com.kwad.sdk.reward.widget.tailframe.appbar.TailFrameBarAppPortraitHorizontal { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_activity_feed_download.xml:10
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_video_tf_view_portrait_vertical.xml:20
+-keep class com.kwad.sdk.reward.widget.tailframe.appbar.TailFrameBarAppPortraitVertical { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_video_tf_view_landscape_horizontal.xml:24
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_video_tf_view_landscape_vertical.xml:45
+-keep class com.kwad.sdk.reward.widget.tailframe.h5bar.TailFrameBarH5Landscape { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_video_tf_view_portrait_horizontal.xml:39
+-keep class com.kwad.sdk.reward.widget.tailframe.h5bar.TailFrameBarH5PortraitHorizontal { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_video_tf_view_portrait_vertical.xml:26
+-keep class com.kwad.sdk.reward.widget.tailframe.h5bar.TailFrameBarH5PortraitVertical { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_fragment_home_tab_layout.xml:10
+-keep class com.kwad.sdk.support.KSViewPager { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_content_alliance_comment_list_panel_2.xml:49
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_content_feed_home_layout.xml:8
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_content_related_panel_layout.xml:56
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_content_slide_home_profile.xml:21
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_horizontal_detail_video_related_layout.xml:8
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_horizontal_feed_home_layout.xml:13
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_live_ec_sku_panel.xml:49
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_news_detail_fragment.xml:10
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_profile_fragment_tab_video.xml:6
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_reflux_native.xml:2
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_tube_detail_info_header.xml:86
+-keep class com.kwad.sdk.support.KsRecyclerView { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_tube_home_title_bar.xml:53
+-keep class com.kwad.sdk.support.KsSpace { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_reward_task_dialog_dash.xml:2
+-keep class com.kwad.sdk.widget.DividerView { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_activity_ad_video_webview.xml:72
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_ad_land_page_native.xml:55
+-keep class com.kwad.sdk.widget.DownloadProgressBar { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_feed_app_download.xml:51
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_feed_text_left_image.xml:30
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_feed_text_right_image.xml:54
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_reflux_app_download.xml:49
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_reflux_card_left.xml:40
+-keep class com.kwad.sdk.widget.DownloadProgressView { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_author_icon.xml:20
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_reward_follow_card.xml:23
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_reward_follow_end_dialog.xml:86
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_reward_followed_card.xml:20
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_reward_order_card.xml:14
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_reward_order_dialog.xml:32
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_reward_order_end_dialog.xml:40
+-keep class com.kwad.sdk.widget.KSCornerImageView { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_ad_land_page_native.xml:2
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_author_icon.xml:36
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_content_feed_home_item_ad.xml:2
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_content_feed_home_item_ad_single_large.xml:2
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_content_feed_home_item_ad_single_small.xml:2
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_content_feed_home_item_photo.xml:2
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_content_feed_home_item_photo_single_large.xml:2
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_content_feed_home_item_photo_single_small.xml:2
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_content_feed_home_item_wallpaper_double_photo.xml:2
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_content_feed_home_item_wallpaper_double_radius_photo.xml:2
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_content_feed_item_11_image.xml:10
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_content_feed_item_11_video.xml:10
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_content_feed_item_13_image.xml:27
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_content_feed_item_13_video.xml:27
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_content_interstitial_ad_layout.xml:21
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_content_related_video_item.xml:2
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_content_slide_home_profile_item.xml:2
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_feed_item_news_no_imge.xml:1
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_feed_item_news_single_imge.xml:2
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_feed_item_news_three_imge.xml:1
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_feed_item_news_video.xml:2
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_horizontal_detail_video_related_item_layout.xml:9
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_horizontal_feed_item_play_video.xml:9
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_horizontal_feed_item_video.xml:2
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_interstitial.xml:2
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_interstitial_native.xml:2
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_interstitial_native_above.xml:2
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_news_detail_item_ad.xml:2
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_news_detail_item_news.xml:2
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_news_header_webview_layout.xml:16
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_profile_fragment_tab_video_item_layout.xml:2
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_reflux_card_left.xml:55
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_reflux_card_top.xml:22
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_reward_apk_info_card.xml:2
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_reward_apk_info_card_native.xml:21
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_reward_follow_dialog.xml:17
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_reward_follow_end_dialog.xml:19
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_reward_followed_card.xml:2
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_reward_order_card.xml:2
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_reward_order_dialog.xml:8
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_reward_order_end_dialog.xml:9
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_reward_task_launch_app_dialog.xml:32
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_reward_video_area.xml:43
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_view_entry_tab.xml:20
+-keep class com.kwad.sdk.widget.KSFrameLayout { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_ad_land_page_native.xml:8
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_content_feed_item_13_image.xml:2
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_interstitial_auto_close.xml:2
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_reflux_card_left.xml:2
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_reflux_card_top.xml:2
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_reward_follow_card.xml:2
+-keep class com.kwad.sdk.widget.KSLinearLayout { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_activity_apk_info_landscape.xml:31
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_reward_apk_info_card_native.xml:60
+-keep class com.kwad.sdk.widget.KSRatingBar { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_activity_ad_land_page.xml:2
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_activity_land_page_horizontal.xml:2
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_feed_video_palyer_controller.xml:2
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_horizontal_detail_video_related_item_layout.xml:2
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_horizontal_feed_item_play_video.xml:2
+-keep class com.kwad.sdk.widget.KSRelativeLayout { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_activity_fullscreen_video.xml:132
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_activity_reward_video.xml:179
+-keep class com.kwad.sdk.widget.KsAuthorIconView { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_interstitial.xml:48
+-keep class com.kwad.sdk.widget.KsAutoCloseView { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_activity_ad_land_page.xml:39
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_activity_fullscreen_video.xml:49
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_activity_land_page_horizontal.xml:39
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_activity_reward_video.xml:51
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_ad_land_page_native.xml:63
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_content_alliance_detail_ad_bottom.xml:46
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_content_feed_home_item_ad.xml:38
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_content_feed_home_item_ad_single_large.xml:95
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_content_feed_home_item_ad_single_small.xml:39
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_content_feed_item_11_image.xml:123
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_content_feed_item_11_video.xml:157
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_content_feed_item_13_image.xml:104
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_content_feed_item_13_video.xml:141
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_content_interstitial_ad_layout.xml:32
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_draw_card_app.xml:56
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_draw_card_h5.xml:18
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_draw_layout.xml:73
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_draw_video_tailframe.xml:124
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_feed_content_text_right_image.xml:24
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_feed_label_dislike.xml:10
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_feed_text_immerse_image.xml:17
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_feed_text_left_image.xml:59
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_feed_text_right_image.xml:26
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_interstitial_native_element.xml:50
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_news_detail_item_ad.xml:50
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_reflux_card_left.xml:75
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_reflux_card_top.xml:34
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_splash_screen.xml:111
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_video_actionbar_landscape_vertical.xml:84
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_video_actionbar_portrait_horizontal.xml:140
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_video_tf_view_landscape_horizontal.xml:31
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_video_tf_view_landscape_vertical.xml:52
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_video_tf_view_portrait_horizontal.xml:21
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_video_tf_view_portrait_vertical.xml:33
+-keep class com.kwad.sdk.widget.KsLogoView { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_reward_order_card.xml:82
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_reward_order_end_dialog.xml:67
+-keep class com.kwad.sdk.widget.KsPriceView { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_horizontal_video_player_view_layout.xml:94
+-keep class com.kwad.sdk.widget.KsSeekBar { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_author_icon.xml:61
+-keep class com.kwad.sdk.widget.KsStyledImageView { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_author_icon.xml:77
+-keep class com.kwad.sdk.widget.KsStyledLinearLayout { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_reward_follow_card.xml:64
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_reward_follow_dialog.xml:30
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_reward_follow_end_dialog.xml:65
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_reward_followed_card.xml:27
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_reward_order_card.xml:60
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_reward_order_dialog.xml:60
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_reward_order_end_dialog.xml:90
+-keep class com.kwad.sdk.widget.KsStyledTextButton { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_splash_screen.xml:80
+-keep class com.kwad.sdk.widget.SkipView { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_fragment_empty_container.xml:2
+-keep class com.kwad.sdk.widget.TouchHandleFrameLayout { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_reward_detail_top_toolbar.xml:113
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_reward_end_top_toolbar.xml:30
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_view_entryphoto.xml:22
+-keep class com.kwad.sdk.widget.WebpAnimationImageView { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ksad_patch_ad_actionbar_layout.xml:2
+-keep class com.kwad.sdk.widget.WrapChildLinearLayout { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\cb40f03c6f79eaf48d59c47c1c9c2e5a\jetified-picture_library-v2.2.4\res\layout\picture_alert_dialog.xml:12
+-keep class com.luck.picture.lib.dialog.PictureSpinView { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\cb40f03c6f79eaf48d59c47c1c9c2e5a\jetified-picture_library-v2.2.4\res\layout\picture_image_preview.xml:6
+-keep class com.luck.picture.lib.photoview.PhotoView { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\cb40f03c6f79eaf48d59c47c1c9c2e5a\jetified-picture_library-v2.2.4\res\layout\picture_activity_external_preview.xml:37
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\cb40f03c6f79eaf48d59c47c1c9c2e5a\jetified-picture_library-v2.2.4\res\layout\picture_preview.xml:56
+-keep class com.luck.picture.lib.widget.PreviewViewPager { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\cb40f03c6f79eaf48d59c47c1c9c2e5a\jetified-picture_library-v2.2.4\res\layout\picture_image_grid_item.xml:2
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\cb40f03c6f79eaf48d59c47c1c9c2e5a\jetified-picture_library-v2.2.4\res\layout\picture_item_camera.xml:2
+-keep class com.luck.picture.lib.widget.SquareRelativeLayout { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\cb40f03c6f79eaf48d59c47c1c9c2e5a\jetified-picture_library-v2.2.4\res\layout\picture_image_preview.xml:13
+-keep class com.luck.picture.lib.widget.longimage.SubsamplingScaleImageView { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\8fc27c4640481db5310b7db441cb6f31\jetified-xpopup-1.8.10-x\res\layout\_xpopup_image_viewer_popup_view.xml:7
+-keep class com.lxj.xpopup.widget.BlankView { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\8fc27c4640481db5310b7db441cb6f31\jetified-xpopup-1.8.10-x\res\layout\_xpopup_adapter_text.xml:40
+-keep class com.lxj.xpopup.widget.CheckView { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\8fc27c4640481db5310b7db441cb6f31\jetified-xpopup-1.8.10-x\res\layout\_xpopup_image_viewer_popup_view.xml:18
+-keep class com.lxj.xpopup.widget.HackyViewPager { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\8fc27c4640481db5310b7db441cb6f31\jetified-xpopup-1.8.10-x\res\layout\_xpopup_center_impl_loading.xml:11
+-keep class com.lxj.xpopup.widget.LoadingView { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\8fc27c4640481db5310b7db441cb6f31\jetified-xpopup-1.8.10-x\res\layout\_xpopup_attach_popup_view.xml:2
+-keep class com.lxj.xpopup.widget.PartShadowContainer { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\8fc27c4640481db5310b7db441cb6f31\jetified-xpopup-1.8.10-x\res\layout\_xpopup_image_viewer_popup_view.xml:13
+-keep class com.lxj.xpopup.widget.PhotoViewContainer { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\8fc27c4640481db5310b7db441cb6f31\jetified-xpopup-1.8.10-x\res\layout\_xpopup_drawer_popup_view.xml:2
+-keep class com.lxj.xpopup.widget.PopupDrawerLayout { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\8fc27c4640481db5310b7db441cb6f31\jetified-xpopup-1.8.10-x\res\layout\_xpopup_bottom_popup_view.xml:2
+-keep class com.lxj.xpopup.widget.SmartDragLayout { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\8fc27c4640481db5310b7db441cb6f31\jetified-xpopup-1.8.10-x\res\layout\_xpopup_attach_impl_list.xml:2
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\8fc27c4640481db5310b7db441cb6f31\jetified-xpopup-1.8.10-x\res\layout\_xpopup_center_impl_list.xml:23
+-keep class com.lxj.xpopup.widget.VerticalRecyclerView { <init>(...); }
+
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\activity_coin_withdraw.xml:358
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\activity_collection.xml:65
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\activity_feedback.xml:206
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\activity_my_expand.xml:51
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\activity_play_score.xml:66
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\activity_screen.xml:71
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\activity_screen2.xml:71
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\activity_screen3.xml:11
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\fragment_collection.xml:32
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\fragment_play_detail.xml:9
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\fragment_rank_child.xml:2
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\fragment_specialtopic.xml:32
+-keep class com.scwang.smartrefresh.layout.SmartRefreshLayout { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ttdownloader_dialog_appinfo.xml:10
+-keep class com.ss.android.downloadlib.guide.install.ClipImageView { <init>(...); }
+
+# Referenced at D:\axys6.5.2\app\src\main\res\layout\fragment_home.xml:61
+-keep class com.sunfusheng.marqueeview.MarqueeView { <init>(...); }
+
+# Referenced at D:\axys6.5.2\newAv\build\intermediates\packaged_res\release\layout\layout_av_controller.xml:63
+-keep class com.xiaweizi.marquee.MarqueeTextView { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\fc051615b91c92f63995e3591311a7c7\jetified-ucrop-v2.2.4\res\layout\ucrop_view.xml:8
+-keep class com.yalantis.ucrop.view.GestureCropImageView { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\fc051615b91c92f63995e3591311a7c7\jetified-ucrop-v2.2.4\res\layout\ucrop_view.xml:14
+-keep class com.yalantis.ucrop.view.OverlayView { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\fc051615b91c92f63995e3591311a7c7\jetified-ucrop-v2.2.4\res\layout\ucrop_activity_photobox.xml:41
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\fc051615b91c92f63995e3591311a7c7\jetified-ucrop-v2.2.4\res\layout\ucrop_picture_activity_multi_cutting.xml:51
+-keep class com.yalantis.ucrop.view.UCropView { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\fc051615b91c92f63995e3591311a7c7\jetified-ucrop-v2.2.4\res\layout\ucrop_aspect_ratio.xml:4
+-keep class com.yalantis.ucrop.view.widget.AspectRatioTextView { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\fc051615b91c92f63995e3591311a7c7\jetified-ucrop-v2.2.4\res\layout\ucrop_layout_rotate_wheel.xml:15
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\fc051615b91c92f63995e3591311a7c7\jetified-ucrop-v2.2.4\res\layout\ucrop_layout_scale_wheel.xml:14
+-keep class com.yalantis.ucrop.view.widget.HorizontalProgressWheelView { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\5c48bd81e120ecbd67695cdf7fee5fb3\jetified-banner-1.4.10\res\layout\banner.xml:8
+-keep class com.youth.banner.view.BannerViewPager { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ssp_fragment_ext.xml:7
+-keep class com.youxiao.ssp.base.widget.SSPBaseWebView { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ssp_activity_ssp_web.xml:15
+-keep class com.youxiao.ssp.base.widget.SSPProgressWebView { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ssp_dialog_confirm.xml:2
+-keep class com.youxiao.ssp.base.widget.SSPRoundLinearLayout { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ssp_activity_ext.xml:9
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\res\layout\ssp_activity_ssp_web.xml:10
+-keep class com.youxiao.ssp.base.widget.SSPTitleLayout { <init>(...); }
+
+# Referenced at D:\axys6.5.2\newAv\build\intermediates\packaged_res\release\layout\layout_av_controller.xml:499
+-keep class pl.droidsonroids.gif.GifImageView { <init>(...); }
+

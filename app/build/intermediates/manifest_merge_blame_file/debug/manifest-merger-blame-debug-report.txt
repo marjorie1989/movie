@@ -1,0 +1,1594 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="cn.axsp.axys"
+4    android:versionCode="220"
+5    android:versionName="6.5.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+8-->D:\axys6.5.2\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="26" />
+9-->[:m3u8library] D:\axys6.5.2\m3u8library\build\intermediates\library_manifest\debug\AndroidManifest.xml:9:9-38
+10
+11    <uses-permission android:name="android.permission.BLUETOOTH" />
+11-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:6:5-68
+11-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:6:22-65
+12    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+12-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:7:5-75
+12-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:7:22-72
+13    <uses-permission android:name="android.permission.CAMERA" />
+13-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:8:5-65
+13-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:8:22-62
+14    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+14-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:9:5-80
+14-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:9:22-77
+15    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+15-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:10:5-80
+15-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:10:22-77
+16    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+16-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:11:5-120
+16-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:11:22-81
+17    <!-- 必要权限 -->
+18    <uses-permission android:name="android.permission.INTERNET" />
+18-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:13:5-67
+18-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:13:22-64
+19    <!-- 必要权限，解决安全风险漏洞，发送和注册广播事件需要调用带有传递权限的接口 -->
+20    <permission
+21        android:name="cn.axsp.axys.openadsdk.permission.TT_PANGOLIN"
+21-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:16:9-73
+22        android:protectionLevel="signature" />
+22-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:17:9-44
+23
+24    <uses-permission android:name="cn.axsp.axys.openadsdk.permission.TT_PANGOLIN" />
+24-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:18:22-86
+25    <!-- 可选权限 -->
+26    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+26-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:20:5-75
+26-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:20:22-72
+27    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+27-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:21:5-79
+27-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:21:22-76
+28    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+28-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:22:5-81
+28-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:22:22-78
+29    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+29-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:23:5-76
+29-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:23:22-73
+30    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+30-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:24:5-81
+30-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:24:22-78
+31    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+31-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:25:5-83
+31-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:25:22-80
+32    <!-- 加入新权限 2022-04-19 -->
+33    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+33-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:27:5-81
+33-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:27:22-78
+34    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+34-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:28:5-80
+34-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:28:22-77
+35    <uses-permission android:name="android.permission.GET_TASKS" />
+35-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:29:5-68
+35-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:29:22-65
+36    <!-- 请注意：无论通过何种方式提供给穿山甲用户地理位置，均需向用户声明地理位置权限将应用于穿山甲广告投放，穿山甲不强制获取地理位置信息 -->
+37    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+37-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:31:5-79
+37-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:31:22-76
+38    <!-- 如果视频广告使用textureView播放，请务必添加，否则黑屏 -->
+39    <uses-permission android:name="android.permission.WAKE_LOCK" />
+39-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:33:5-68
+39-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:33:22-65
+40    <!-- demo场景用到的权限，不是必须的 -->
+41    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+41-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:35:5-79
+41-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:35:22-76
+42    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+42-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:36:5-78
+42-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:36:22-75
+43    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+43-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:37:5-76
+43-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:37:22-73
+44    <!-- demo场景用到的权限，不是必须的 -->
+45    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />
+45-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:39:5-77
+45-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:39:22-74
+46    <uses-permission android:name="android.permission.DELETE_CACHE_FILES" />
+46-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:40:5-42:47
+46-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:41:9-61
+47
+48    <!-- Don't require camera, as this requires a rear camera. This allows it to work on the Nexus 7 -->
+49    <uses-feature
+49-->[com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\691aaa6f5a31f84253dd07c9f94ad652\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:25:5-27:36
+50        android:name="android.hardware.camera"
+50-->[com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\691aaa6f5a31f84253dd07c9f94ad652\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:26:9-47
+51        android:required="false" />
+51-->[com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\691aaa6f5a31f84253dd07c9f94ad652\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:27:9-33
+52    <uses-feature
+52-->[com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\691aaa6f5a31f84253dd07c9f94ad652\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:28:5-30:36
+53        android:name="android.hardware.camera.front"
+53-->[com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\691aaa6f5a31f84253dd07c9f94ad652\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:29:9-53
+54        android:required="false" /> <!-- TODO replace above two with next line after Android 4.2 -->
+54-->[com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\691aaa6f5a31f84253dd07c9f94ad652\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:30:9-33
+55    <!-- <uses-feature android:name="android.hardware.camera.any"/> -->
+56    <uses-feature
+56-->[com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\691aaa6f5a31f84253dd07c9f94ad652\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:33:5-35:36
+57        android:name="android.hardware.camera.autofocus"
+57-->[com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\691aaa6f5a31f84253dd07c9f94ad652\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:34:9-57
+58        android:required="false" />
+58-->[com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\691aaa6f5a31f84253dd07c9f94ad652\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:35:9-33
+59    <uses-feature
+59-->[com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\691aaa6f5a31f84253dd07c9f94ad652\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:36:5-38:36
+60        android:name="android.hardware.camera.flash"
+60-->[com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\691aaa6f5a31f84253dd07c9f94ad652\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:37:9-53
+61        android:required="false" />
+61-->[com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\691aaa6f5a31f84253dd07c9f94ad652\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:38:9-33
+62    <uses-feature
+62-->[com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\691aaa6f5a31f84253dd07c9f94ad652\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:39:5-41:36
+63        android:name="android.hardware.screen.landscape"
+63-->[com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\691aaa6f5a31f84253dd07c9f94ad652\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:40:9-57
+64        android:required="false" />
+64-->[com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\691aaa6f5a31f84253dd07c9f94ad652\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:41:9-33
+65    <uses-feature
+65-->[com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\691aaa6f5a31f84253dd07c9f94ad652\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:42:5-44:36
+66        android:name="android.hardware.wifi"
+66-->[com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\691aaa6f5a31f84253dd07c9f94ad652\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:43:9-45
+67        android:required="false" />
+67-->[com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\691aaa6f5a31f84253dd07c9f94ad652\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:44:9-33
+68
+69    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" /> <!-- <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE" /> -->
+69-->[:core] D:\axys6.5.2\core\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-86
+69-->[:core] D:\axys6.5.2\core\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:22-83
+70    <uses-permission android:name="android.permission.READ_SETTINGS" />
+70-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:17:5-72
+70-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:17:22-69
+71    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_ADDED" />
+71-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:23:5-82
+71-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:23:22-79
+72    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_CHANGED" />
+72-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:24:5-84
+72-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:24:22-81
+73    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_INSTALL" />
+73-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:25:5-84
+73-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:25:22-81
+74    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_REPLACED" />
+74-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:26:5-85
+74-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:26:22-82
+75    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+75-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:30:5-85
+75-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:30:22-82
+76    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+76-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:34:5-88
+76-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:34:22-85
+77    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE" />
+77-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:36:5-75
+77-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:36:22-72
+78    <uses-permission android:name="com.asus.msa.SupplementaryDID.ACCESS" />
+78-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:37:5-76
+78-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:37:22-73
+79    <uses-permission android:name="freemme.permission.msa" />
+79-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:38:5-62
+79-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:38:22-59
+80
+81    <permission
+81-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:46:5-48:47
+82        android:name="cn.axsp.axys.permission.KW_SDK_BROADCAST"
+82-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:47:9-68
+83        android:protectionLevel="signature" />
+83-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:48:9-44
+84
+85    <uses-permission android:name="cn.axsp.axys.permission.KW_SDK_BROADCAST" />
+85-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:50:5-84
+85-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:50:22-81
+86
+87    <queries>
+87-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:52:5-60:15
+88        <intent>
+88-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:53:9-59:18
+89            <action android:name="android.intent.action.VIEW" />
+89-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:240:17-69
+89-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:240:25-66
+90
+91            <category android:name="android.intent.category.BROWSABLE" />
+91-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:56:13-74
+91-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:56:23-71
+92
+93            <data android:scheme="https" />
+93-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:58:13-44
+93-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:58:19-41
+94        </intent>
+95    </queries>
+96
+97    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+97-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:62:5-79
+97-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:62:22-76
+98    <uses-permission android:name="android.permission.REORDER_TASKS" />
+98-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:63:5-72
+98-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:63:22-69
+99    <uses-permission android:name="android.permission.VIBRATE" /> <!-- 动态壁纸权限 -->
+99-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:64:5-66
+99-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:64:22-63
+100    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+100-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:65:5-72
+100-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:65:22-69
+101
+102    <application
+102-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:43:5-279:19
+103        android:name="cn.lvdou.vod.App"
+103-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:44:9-28
+104        android:allowBackup="false"
+104-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:45:9-36
+105        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+105-->[androidx.core:core:1.3.2] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\435be484a02431e0865da9a870fb3532\core-1.3.2\AndroidManifest.xml:24:18-86
+106        android:debuggable="true"
+107        android:extractNativeLibs="false"
+108        android:hardwareAccelerated="true"
+108-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:46:9-43
+109        android:icon="@mipmap/ic_launcher"
+109-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:47:9-43
+110        android:label="@string/app_name"
+110-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:48:9-41
+111        android:largeHeap="true"
+111-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:49:9-33
+112        android:resizeableActivity="true"
+112-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:50:9-42
+113        android:supportsRtl="true"
+113-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:51:9-35
+114        android:theme="@style/AppTheme"
+114-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:52:9-40
+115        android:usesCleartextTraffic="true" >
+115-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:53:9-44
+116        <provider
+117            android:name="com.bytedance.sdk.openadsdk.TTFileProvider"
+117-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:58:13-70
+118            android:authorities="cn.axsp.axys.TTFileProvider"
+118-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:59:13-66
+119            android:exported="false"
+119-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:60:13-37
+120            android:grantUriPermissions="true" >
+120-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:61:13-47
+121            <meta-data
+121-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:62:13-64:54
+122                android:name="android.support.FILE_PROVIDER_PATHS"
+122-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:63:17-67
+123                android:resource="@xml/file_paths" />
+123-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:64:17-51
+124        </provider>
+125        <provider
+126            android:name="com.bytedance.sdk.openadsdk.multipro.TTMultiProvider"
+126-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:68:13-80
+127            android:authorities="cn.axsp.axys.TTMultiProvider"
+127-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:69:13-67
+128            android:exported="false" />
+128-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:70:13-37
+129
+130        <activity android:name="cn.lvdou.vod.ui.task.MainActivity33" />
+130-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:72:9-60
+130-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:72:19-57
+131        <activity
+131-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:73:9-76:55
+132            android:name="cn.lvdou.vod.ui.browser.BrowserActivity"
+132-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:74:13-55
+133            android:launchMode="singleTop"
+133-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:75:13-43
+134            android:screenOrientation="unspecified" />
+134-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:76:13-52
+135        <activity
+135-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:77:9-80:55
+136            android:name="cn.lvdou.vod.ui.collection.CollectionActivity"
+136-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:78:13-61
+137            android:launchMode="singleTop"
+137-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:79:13-43
+138            android:screenOrientation="unspecified" />
+138-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:80:13-52
+139        <activity
+139-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:81:9-84:55
+140            android:name="cn.lvdou.vod.ui.feedback.FeedbackActivity"
+140-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:82:13-57
+141            android:launchMode="singleTop"
+141-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:83:13-43
+142            android:screenOrientation="unspecified" />
+142-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:84:13-52
+143        <activity
+143-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:85:9-88:55
+144            android:name="cn.lvdou.vod.ui.down.AllDownloadActivity"
+144-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:86:13-56
+145            android:launchMode="singleTop"
+145-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:87:13-43
+146            android:screenOrientation="unspecified" />
+146-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:88:13-52
+147        <activity
+147-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:89:9-92:55
+148            android:name="cn.lvdou.vod.ui.withdraw.GoldWithdrawActivity"
+148-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:90:13-61
+149            android:launchMode="singleTop"
+149-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:91:13-43
+150            android:screenOrientation="unspecified" />
+150-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:92:13-52
+151        <activity
+151-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:93:9-96:55
+152            android:name="cn.lvdou.vod.ui.share.ShareActivity"
+152-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:94:13-51
+153            android:launchMode="singleTop"
+153-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:95:13-43
+154            android:screenOrientation="unspecified" />
+154-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:96:13-52
+155        <activity android:name="cn.lvdou.vod.ui.account.ChangeNicknameActivity" />
+155-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:97:9-71
+155-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:97:19-68
+156        <activity
+156-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:98:9-101:55
+157            android:name="cn.lvdou.vod.ui.account.AccountSettingActivity"
+157-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:99:13-62
+158            android:launchMode="singleTop"
+158-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:100:13-43
+159            android:screenOrientation="unspecified" />
+159-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:101:13-52
+160        <activity
+160-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:102:9-105:55
+161            android:name="cn.lvdou.vod.ui.pay.PayActivity"
+161-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:103:13-47
+162            android:launchMode="singleTop"
+162-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:104:13-43
+163            android:screenOrientation="unspecified" />
+163-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:105:13-52
+164        <activity
+164-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:106:9-109:55
+165            android:name="cn.lvdou.vod.ui.home.HomeFristMoreActivity"
+165-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:107:13-58
+166            android:launchMode="singleTop"
+166-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:108:13-43
+167            android:screenOrientation="unspecified" />
+167-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:109:13-52
+168        <activity
+168-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:110:9-115:59
+169            android:name="cn.lvdou.vod.ui.score.PlayScoreActivity"
+169-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:111:13-55
+170            android:label="@string/title_activity_play_score"
+170-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:112:13-62
+171            android:launchMode="singleTop"
+171-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:113:13-43
+172            android:screenOrientation="unspecified"
+172-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:114:13-52
+173            android:theme="@style/AppTheme.NoActionBar" />
+173-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:115:13-56
+174        <activity
+174-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:116:9-119:55
+175            android:name="cn.lvdou.vod.ui.filtrate.FiltrateActivity"
+175-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:117:13-57
+176            android:launchMode="singleTop"
+176-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:118:13-43
+177            android:screenOrientation="unspecified" />
+177-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:119:13-52
+178
+179        <!-- <activity -->
+180        <!-- android:name=".ui.login.AgreementActivity" -->
+181        <!-- android:launchMode="singleTop" -->
+182        <!-- android:screenOrientation="unspecified" /> -->
+183        <activity
+183-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:125:9-129:59
+184            android:name="cn.lvdou.vod.ui.seek.SeekActivity"
+184-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:126:13-49
+185            android:launchMode="singleTop"
+185-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:127:13-43
+186            android:screenOrientation="unspecified"
+186-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:128:13-52
+187            android:windowSoftInputMode="adjustNothing" />
+187-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:129:13-56
+188        <activity
+188-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:130:9-134:47
+189            android:name="cn.lvdou.vod.ui.screen.ScreenActivity2"
+189-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:131:13-54
+190            android:launchMode="singleTop"
+190-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:132:13-43
+191            android:screenOrientation="unspecified"
+191-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:133:13-52
+192            android:theme="@style/AppTheme" />
+192-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:134:13-44
+193        <activity
+193-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:135:9-139:47
+194            android:name="cn.lvdou.vod.ui.screen.ScreenActivity3"
+194-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:136:13-54
+195            android:launchMode="singleTop"
+195-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:137:13-43
+196            android:screenOrientation="unspecified"
+196-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:138:13-52
+197            android:theme="@style/AppTheme" />
+197-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:139:13-44
+198        <activity
+198-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:140:9-143:55
+199            android:name="cn.lvdou.vod.ui.login.LoginActivity"
+199-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:141:13-51
+200            android:launchMode="singleTop"
+200-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:142:13-43
+201            android:screenOrientation="unspecified" />
+201-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:143:13-52
+202        <activity
+202-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:144:9-147:55
+203            android:name="cn.lvdou.vod.ui.login.ForgetPswActivity"
+203-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:145:13-55
+204            android:launchMode="singleTop"
+204-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:146:13-43
+205            android:screenOrientation="unspecified" />
+205-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:147:13-52
+206        <activity
+206-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:148:9-151:55
+207            android:name="cn.lvdou.vod.ui.task.TaskActivity"
+207-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:149:13-49
+208            android:launchMode="singleTop"
+208-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:150:13-43
+209            android:screenOrientation="unspecified" />
+209-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:151:13-52
+210        <activity
+210-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:152:9-155:55
+211            android:name="cn.lvdou.vod.ui.task.TaskActivity2"
+211-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:153:13-50
+212            android:launchMode="singleTop"
+212-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:154:13-43
+213            android:screenOrientation="unspecified" />
+213-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:155:13-52
+214        <activity
+214-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:156:9-159:55
+215            android:name="cn.lvdou.vod.ui.notice.MessageCenterActivity"
+215-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:157:13-60
+216            android:launchMode="singleTop"
+216-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:158:13-43
+217            android:screenOrientation="unspecified" />
+217-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:159:13-52
+218        <activity
+218-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:160:9-163:55
+219            android:name="cn.lvdou.vod.ui.notice.MessageDetailActivity"
+219-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:161:13-60
+220            android:launchMode="singleTop"
+220-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:162:13-43
+221            android:screenOrientation="unspecified" />
+221-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:163:13-52
+222        <activity
+222-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:164:9-167:55
+223            android:name="cn.lvdou.vod.ui.expand.MyExpandActivity"
+223-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:165:13-55
+224            android:launchMode="singleTop"
+224-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:166:13-43
+225            android:screenOrientation="unspecified" />
+225-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:167:13-52
+226        <activity
+226-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:168:9-171:55
+227            android:name="cn.lvdou.vod.ui.expand.ExpandCenterActivity"
+227-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:169:13-59
+228            android:launchMode="singleTop"
+228-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:170:13-43
+229            android:screenOrientation="unspecified" />
+229-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:171:13-52
+230        <activity
+230-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:172:9-176:55
+231            android:name="cn.lvdou.vod.ui.play.PlayActivity"
+231-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:173:13-49
+232            android:configChanges="orientation|screenSize|keyboardHidden|screenLayout|smallestScreenSize"
+232-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:174:13-106
+233            android:launchMode="standard"
+233-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:175:13-42
+234            android:screenOrientation="unspecified" />
+234-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:176:13-52
+235        <activity
+235-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:177:9-181:55
+236            android:name="cn.lvdou.vod.ui.play.NewPlayActivity"
+236-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:178:13-52
+237            android:configChanges="orientation|screenSize|keyboardHidden|screenLayout|smallestScreenSize"
+237-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:179:13-106
+238            android:screenOrientation="unspecified" />
+238-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:181:13-52
+239        <!-- android:launchMode="singleTask" -->
+240        <activity
+240-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:183:9-187:55
+241            android:name="cn.lvdou.vod.ui.play.StorePlayActivity"
+241-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:184:13-54
+242            android:configChanges="orientation|screenSize|keyboardHidden|screenLayout|smallestScreenSize"
+242-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:185:13-106
+243            android:launchMode="singleTop"
+243-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:186:13-43
+244            android:screenOrientation="unspecified" />
+244-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:187:13-52
+245        <activity
+245-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:188:9-192:55
+246            android:name="cn.lvdou.vod.ui.play.CastScreenActivity"
+246-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:189:13-55
+247            android:configChanges="orientation|screenSize|keyboardHidden|screenLayout|smallestScreenSize"
+247-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:190:13-106
+248            android:launchMode="singleTop"
+248-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:191:13-43
+249            android:screenOrientation="unspecified" />
+249-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:192:13-52
+250        <activity
+250-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:193:9-197:55
+251            android:name="cn.lvdou.vod.ui.play.CastScreenActivity2"
+251-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:194:13-56
+252            android:configChanges="orientation|screenSize|keyboardHidden|screenLayout|smallestScreenSize"
+252-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:195:13-106
+253            android:launchMode="singleTop"
+253-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:196:13-43
+254            android:screenOrientation="unspecified" />
+254-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:197:13-52
+255        <activity
+255-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:198:9-201:47
+256            android:name="cn.lvdou.vod.MainActivity"
+256-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:199:13-41
+257            android:configChanges="orientation|screenSize|keyboardHidden"
+257-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:200:13-74
+258            android:launchMode="singleTask" />
+258-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:201:13-44
+259        <activity
+259-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:202:9-205:55
+260            android:name="cn.lvdou.vod.ui.lanuch.LanuchActivity"
+260-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:203:13-53
+261            android:launchMode="singleTop"
+261-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:204:13-43
+262            android:screenOrientation="unspecified" />
+262-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:205:13-52
+263        <activity
+263-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:206:9-209:55
+264            android:name="cn.lvdou.vod.ui.game.WebViewActivity"
+264-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:207:13-52
+265            android:launchMode="singleTop"
+265-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:208:13-43
+266            android:screenOrientation="unspecified" />
+266-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:209:13-52
+267        <activity
+267-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:210:9-213:55
+268            android:name="cn.lvdou.vod.ui.specialtopic.TopicDetailActivity"
+268-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:211:13-64
+269            android:launchMode="singleTop"
+269-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:212:13-43
+270            android:screenOrientation="unspecified" />
+270-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:213:13-52
+271        <activity
+271-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:214:9-225:20
+272            android:name="com.tencent.smtt.sdk.VideoActivity"
+272-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:215:13-62
+273            android:alwaysRetainTaskState="true"
+273-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:216:13-49
+274            android:configChanges="orientation|screenSize|keyboardHidden"
+274-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:217:13-74
+275            android:exported="false"
+275-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:218:13-37
+276            android:launchMode="singleTask" >
+276-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:219:13-44
+277            <intent-filter>
+277-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:220:13-224:29
+278                <action android:name="com.tencent.smtt.tbs.video.PLAY" />
+278-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:221:17-74
+278-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:221:25-71
+279
+280                <category android:name="android.intent.category.DEFAULT" />
+280-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:223:17-76
+280-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:223:27-73
+281            </intent-filter>
+282        </activity>
+283        <activity
+283-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:226:9-229:46
+284            android:name="cn.lvdou.vod.ui.play.X5WebViewActivity"
+284-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:227:13-54
+285            android:configChanges="orientation|screenSize|keyboardHidden"
+285-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:228:13-74
+286            android:launchMode="singleTop" />
+286-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:229:13-43
+287        <activity
+287-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:231:9-234:46
+288            android:name="cn.lvdou.vod.ui.play.X5WebActivity"
+288-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:232:13-50
+289            android:configChanges="orientation|screenSize|keyboardHidden"
+289-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:233:13-74
+290            android:launchMode="singleTop" />
+290-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:234:13-43
+291        <activity
+291-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:235:9-245:20
+292            android:name="cn.lvdou.vod.ui.start.StartActivity"
+292-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:236:13-51
+293            android:screenOrientation="unspecified"
+293-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:237:13-52
+294            android:theme="@style/AppTheme.Launcher" >
+294-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:238:13-53
+295            <intent-filter>
+295-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:239:13-244:29
+296                <action android:name="android.intent.action.VIEW" />
+296-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:240:17-69
+296-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:240:25-66
+297                <action android:name="android.intent.action.MAIN" />
+297-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:241:17-69
+297-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:241:25-66
+298
+299                <category android:name="android.intent.category.LAUNCHER" />
+299-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:243:17-77
+299-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:243:27-74
+300            </intent-filter>
+301        </activity>
+302        <activity android:name="cn.lvdou.vod.TestActivity2" />
+302-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:246:9-51
+302-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:246:19-48
+303        <activity android:name="cn.lvdou.vod.ui.task.MainActivity3" />
+303-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:247:9-59
+303-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:247:19-56
+304        <activity android:name="cn.lvdou.vod.TestAes" />
+304-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:248:9-54
+304-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:248:19-42
+305        <activity android:name="cn.lvdou.vod.MergeTestActivity2" />
+305-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:249:9-65
+305-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:249:19-53
+306
+307        <receiver android:name="cn.lvdou.vod.receiver.ScreenBroadCastReceiver" >
+307-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:251:9-257:20
+307-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:251:19-67
+308            <intent-filter>
+308-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:252:13-256:29
+309                <action android:name="android.intent.action.SCREEN_ON" />
+309-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:253:17-74
+309-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:253:25-71
+310                <action android:name="android.intent.action.SCREEN_OFF" />
+310-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:254:17-75
+310-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:254:25-72
+311                <action android:name="android.intent.action.USER_PRESENT" />
+311-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:255:17-77
+311-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:255:25-74
+312            </intent-filter>
+313        </receiver>
+314
+315        <provider
+316            android:name="androidx.core.content.FileProvider"
+316-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:260:13-62
+317            android:authorities="cn.axsp.axys.fileprovider"
+317-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:261:13-64
+318            android:exported="false"
+318-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:262:13-37
+319            android:grantUriPermissions="true" >
+319-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:263:13-47
+320            <meta-data
+320-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:62:13-64:54
+321                android:name="android.support.FILE_PROVIDER_PATHS"
+321-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:63:17-67
+322                android:resource="@xml/file_paths" />
+322-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:64:17-51
+323        </provider>
+324
+325        <!--
+326        <activity android:name=".TestMergeActivity2">
+327            <intent-filter>
+328                <action android:name="android.intent.action.MAIN" />
+329                <category android:name="android.intent.category.LAUNCHER" />
+330            </intent-filter>
+331        </activity>
+332        -->
+333        <service
+333-->[:m3u8library] D:\axys6.5.2\m3u8library\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:9-17:19
+334            android:name="jaygoo.library.m3u8downloader.service.VideoService"
+334-->[:m3u8library] D:\axys6.5.2\m3u8library\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-78
+335            android:exported="false" >
+335-->[:m3u8library] D:\axys6.5.2\m3u8library\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:13-37
+336        </service>
+337
+338        <activity
+338-->[com.blankj:utilcodex:1.26.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\2e4592f0795b1a90ff5a8e19da247cc6\jetified-utilcodex-1.26.0\AndroidManifest.xml:10:9-15:75
+339            android:name="com.blankj.utilcode.util.Utils$TransActivity"
+339-->[com.blankj:utilcodex:1.26.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\2e4592f0795b1a90ff5a8e19da247cc6\jetified-utilcodex-1.26.0\AndroidManifest.xml:11:13-72
+340            android:configChanges="orientation|keyboardHidden|screenSize"
+340-->[com.blankj:utilcodex:1.26.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\2e4592f0795b1a90ff5a8e19da247cc6\jetified-utilcodex-1.26.0\AndroidManifest.xml:12:13-74
+341            android:multiprocess="true"
+341-->[com.blankj:utilcodex:1.26.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\2e4592f0795b1a90ff5a8e19da247cc6\jetified-utilcodex-1.26.0\AndroidManifest.xml:13:13-40
+342            android:theme="@style/ActivityTranslucent"
+342-->[com.blankj:utilcodex:1.26.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\2e4592f0795b1a90ff5a8e19da247cc6\jetified-utilcodex-1.26.0\AndroidManifest.xml:14:13-55
+343            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+343-->[com.blankj:utilcodex:1.26.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\2e4592f0795b1a90ff5a8e19da247cc6\jetified-utilcodex-1.26.0\AndroidManifest.xml:15:13-72
+344
+345        <provider
+345-->[com.blankj:utilcodex:1.26.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\2e4592f0795b1a90ff5a8e19da247cc6\jetified-utilcodex-1.26.0\AndroidManifest.xml:17:9-26:20
+346            android:name="com.blankj.utilcode.util.Utils$FileProvider4UtilCode"
+346-->[com.blankj:utilcodex:1.26.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\2e4592f0795b1a90ff5a8e19da247cc6\jetified-utilcodex-1.26.0\AndroidManifest.xml:18:13-80
+347            android:authorities="cn.axsp.axys.utilcode.provider"
+347-->[com.blankj:utilcodex:1.26.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\2e4592f0795b1a90ff5a8e19da247cc6\jetified-utilcodex-1.26.0\AndroidManifest.xml:19:13-69
+348            android:exported="false"
+348-->[com.blankj:utilcodex:1.26.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\2e4592f0795b1a90ff5a8e19da247cc6\jetified-utilcodex-1.26.0\AndroidManifest.xml:20:13-37
+349            android:grantUriPermissions="true"
+349-->[com.blankj:utilcodex:1.26.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\2e4592f0795b1a90ff5a8e19da247cc6\jetified-utilcodex-1.26.0\AndroidManifest.xml:21:13-47
+350            android:multiprocess="true" >
+350-->[com.blankj:utilcodex:1.26.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\2e4592f0795b1a90ff5a8e19da247cc6\jetified-utilcodex-1.26.0\AndroidManifest.xml:22:13-40
+351            <meta-data
+351-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:62:13-64:54
+352                android:name="android.support.FILE_PROVIDER_PATHS"
+352-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:63:17-67
+353                android:resource="@xml/util_code_provider_paths" />
+353-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:64:17-51
+354        </provider>
+355
+356        <service android:name="com.blankj.utilcode.util.MessengerUtils$ServerService" >
+356-->[com.blankj:utilcodex:1.26.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\2e4592f0795b1a90ff5a8e19da247cc6\jetified-utilcodex-1.26.0\AndroidManifest.xml:28:9-32:19
+356-->[com.blankj:utilcodex:1.26.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\2e4592f0795b1a90ff5a8e19da247cc6\jetified-utilcodex-1.26.0\AndroidManifest.xml:28:18-86
+357            <intent-filter>
+357-->[com.blankj:utilcodex:1.26.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\2e4592f0795b1a90ff5a8e19da247cc6\jetified-utilcodex-1.26.0\AndroidManifest.xml:29:13-31:29
+358                <action android:name="cn.axsp.axys.messenger" />
+358-->[com.blankj:utilcodex:1.26.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\2e4592f0795b1a90ff5a8e19da247cc6\jetified-utilcodex-1.26.0\AndroidManifest.xml:30:17-69
+358-->[com.blankj:utilcodex:1.26.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\2e4592f0795b1a90ff5a8e19da247cc6\jetified-utilcodex-1.26.0\AndroidManifest.xml:30:25-66
+359            </intent-filter>
+360        </service>
+361
+362        <provider
+362-->[com.github.LuckSiege.PictureSelector:picture_library:v2.2.4] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\cb40f03c6f79eaf48d59c47c1c9c2e5a\jetified-picture_library-v2.2.4\AndroidManifest.xml:12:9-20:20
+363            android:name="com.luck.picture.lib.PictureFileProvider"
+363-->[com.github.LuckSiege.PictureSelector:picture_library:v2.2.4] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\cb40f03c6f79eaf48d59c47c1c9c2e5a\jetified-picture_library-v2.2.4\AndroidManifest.xml:13:13-68
+364            android:authorities="cn.axsp.axys.provider"
+364-->[com.github.LuckSiege.PictureSelector:picture_library:v2.2.4] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\cb40f03c6f79eaf48d59c47c1c9c2e5a\jetified-picture_library-v2.2.4\AndroidManifest.xml:14:13-60
+365            android:exported="false"
+365-->[com.github.LuckSiege.PictureSelector:picture_library:v2.2.4] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\cb40f03c6f79eaf48d59c47c1c9c2e5a\jetified-picture_library-v2.2.4\AndroidManifest.xml:15:13-37
+366            android:grantUriPermissions="true" >
+366-->[com.github.LuckSiege.PictureSelector:picture_library:v2.2.4] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\cb40f03c6f79eaf48d59c47c1c9c2e5a\jetified-picture_library-v2.2.4\AndroidManifest.xml:16:13-47
+367            <meta-data
+367-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:62:13-64:54
+368                android:name="android.support.FILE_PROVIDER_PATHS"
+368-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:63:17-67
+369                android:resource="@xml/file_paths" />
+369-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:64:17-51
+370        </provider>
+371
+372        <activity
+372-->[com.github.LuckSiege.PictureSelector:picture_library:v2.2.4] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\cb40f03c6f79eaf48d59c47c1c9c2e5a\jetified-picture_library-v2.2.4\AndroidManifest.xml:22:9-24:55
+373            android:name="com.luck.picture.lib.PictureSelectorActivity"
+373-->[com.github.LuckSiege.PictureSelector:picture_library:v2.2.4] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\cb40f03c6f79eaf48d59c47c1c9c2e5a\jetified-picture_library-v2.2.4\AndroidManifest.xml:23:13-72
+374            android:windowSoftInputMode="adjustPan" />
+374-->[com.github.LuckSiege.PictureSelector:picture_library:v2.2.4] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\cb40f03c6f79eaf48d59c47c1c9c2e5a\jetified-picture_library-v2.2.4\AndroidManifest.xml:24:13-52
+375        <activity android:name="com.luck.picture.lib.PicturePreviewActivity" />
+375-->[com.github.LuckSiege.PictureSelector:picture_library:v2.2.4] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\cb40f03c6f79eaf48d59c47c1c9c2e5a\jetified-picture_library-v2.2.4\AndroidManifest.xml:25:9-80
+375-->[com.github.LuckSiege.PictureSelector:picture_library:v2.2.4] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\cb40f03c6f79eaf48d59c47c1c9c2e5a\jetified-picture_library-v2.2.4\AndroidManifest.xml:25:19-77
+376        <activity
+376-->[com.github.LuckSiege.PictureSelector:picture_library:v2.2.4] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\cb40f03c6f79eaf48d59c47c1c9c2e5a\jetified-picture_library-v2.2.4\AndroidManifest.xml:26:9-29:50
+377            android:name="com.luck.picture.lib.PictureVideoPlayActivity"
+377-->[com.github.LuckSiege.PictureSelector:picture_library:v2.2.4] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\cb40f03c6f79eaf48d59c47c1c9c2e5a\jetified-picture_library-v2.2.4\AndroidManifest.xml:27:13-73
+378            android:configChanges="orientation|keyboardHidden|screenSize"
+378-->[com.github.LuckSiege.PictureSelector:picture_library:v2.2.4] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\cb40f03c6f79eaf48d59c47c1c9c2e5a\jetified-picture_library-v2.2.4\AndroidManifest.xml:28:13-74
+379            android:screenOrientation="sensor" />
+379-->[com.github.LuckSiege.PictureSelector:picture_library:v2.2.4] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\cb40f03c6f79eaf48d59c47c1c9c2e5a\jetified-picture_library-v2.2.4\AndroidManifest.xml:29:13-47
+380        <activity android:name="com.luck.picture.lib.PictureExternalPreviewActivity" />
+380-->[com.github.LuckSiege.PictureSelector:picture_library:v2.2.4] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\cb40f03c6f79eaf48d59c47c1c9c2e5a\jetified-picture_library-v2.2.4\AndroidManifest.xml:30:9-88
+380-->[com.github.LuckSiege.PictureSelector:picture_library:v2.2.4] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\cb40f03c6f79eaf48d59c47c1c9c2e5a\jetified-picture_library-v2.2.4\AndroidManifest.xml:30:19-85
+381        <activity android:name="com.yalantis.ucrop.UCropActivity" />
+381-->[com.github.LuckSiege.PictureSelector:picture_library:v2.2.4] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\cb40f03c6f79eaf48d59c47c1c9c2e5a\jetified-picture_library-v2.2.4\AndroidManifest.xml:31:9-69
+381-->[com.github.LuckSiege.PictureSelector:picture_library:v2.2.4] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\cb40f03c6f79eaf48d59c47c1c9c2e5a\jetified-picture_library-v2.2.4\AndroidManifest.xml:31:19-66
+382        <activity android:name="com.yalantis.ucrop.PictureMultiCuttingActivity" />
+382-->[com.github.LuckSiege.PictureSelector:picture_library:v2.2.4] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\cb40f03c6f79eaf48d59c47c1c9c2e5a\jetified-picture_library-v2.2.4\AndroidManifest.xml:32:9-83
+382-->[com.github.LuckSiege.PictureSelector:picture_library:v2.2.4] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\cb40f03c6f79eaf48d59c47c1c9c2e5a\jetified-picture_library-v2.2.4\AndroidManifest.xml:32:19-80
+383        <activity android:name="com.luck.picture.lib.PicturePlayAudioActivity" />
+383-->[com.github.LuckSiege.PictureSelector:picture_library:v2.2.4] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\cb40f03c6f79eaf48d59c47c1c9c2e5a\jetified-picture_library-v2.2.4\AndroidManifest.xml:33:9-82
+383-->[com.github.LuckSiege.PictureSelector:picture_library:v2.2.4] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\cb40f03c6f79eaf48d59c47c1c9c2e5a\jetified-picture_library-v2.2.4\AndroidManifest.xml:33:19-79
+384
+385        <meta-data
+385-->[com.lxj:xpermission:1.0.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\07a847445270e95fc3079e8bbabf8c01\jetified-xpermission-1.0.1\AndroidManifest.xml:12:9-14:36
+386            android:name="android.notch_support"
+386-->[com.lxj:xpermission:1.0.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\07a847445270e95fc3079e8bbabf8c01\jetified-xpermission-1.0.1\AndroidManifest.xml:13:13-49
+387            android:value="true" /> <!-- <meta-data android:name="android.max_aspect" android:value="2.4" /> -->
+387-->[com.lxj:xpermission:1.0.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\07a847445270e95fc3079e8bbabf8c01\jetified-xpermission-1.0.1\AndroidManifest.xml:14:13-33
+388        <!-- PermissonActivity -->
+389        <activity
+389-->[com.lxj:xpermission:1.0.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\07a847445270e95fc3079e8bbabf8c01\jetified-xpermission-1.0.1\AndroidManifest.xml:17:9-19:75
+390            android:name="com.lxj.xpermission.XPermission$PermissionActivity"
+390-->[com.lxj:xpermission:1.0.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\07a847445270e95fc3079e8bbabf8c01\jetified-xpermission-1.0.1\AndroidManifest.xml:18:13-78
+391            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+391-->[com.lxj:xpermission:1.0.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\07a847445270e95fc3079e8bbabf8c01\jetified-xpermission-1.0.1\AndroidManifest.xml:19:13-72
+392        <activity
+392-->[com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\691aaa6f5a31f84253dd07c9f94ad652\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:47:9-53:63
+393            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+393-->[com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\691aaa6f5a31f84253dd07c9f94ad652\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:48:13-74
+394            android:clearTaskOnLaunch="true"
+394-->[com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\691aaa6f5a31f84253dd07c9f94ad652\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:49:13-45
+395            android:screenOrientation="sensorLandscape"
+395-->[com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\691aaa6f5a31f84253dd07c9f94ad652\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:50:13-56
+396            android:stateNotNeeded="true"
+396-->[com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\691aaa6f5a31f84253dd07c9f94ad652\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:51:13-42
+397            android:theme="@style/zxing_CaptureTheme"
+397-->[com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\691aaa6f5a31f84253dd07c9f94ad652\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:52:13-54
+398            android:windowSoftInputMode="stateAlwaysHidden" />
+398-->[com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\691aaa6f5a31f84253dd07c9f94ad652\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:53:13-60
+399
+400        <provider
+400-->[me.yokeyword:eventbus-activity-scope:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\efeb0134118614730166e12ff92752cb\jetified-eventbus-activity-scope-1.1.0\AndroidManifest.xml:10:9-14:43
+401            android:name="me.yokeyword.eventbusactivityscope.RuntimeTrojanProvider"
+401-->[me.yokeyword:eventbus-activity-scope:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\efeb0134118614730166e12ff92752cb\jetified-eventbus-activity-scope-1.1.0\AndroidManifest.xml:11:13-84
+402            android:authorities="cn.axsp.axys.eventbus_activity_scope_trojan"
+402-->[me.yokeyword:eventbus-activity-scope:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\efeb0134118614730166e12ff92752cb\jetified-eventbus-activity-scope-1.1.0\AndroidManifest.xml:12:13-82
+403            android:exported="false"
+403-->[me.yokeyword:eventbus-activity-scope:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\efeb0134118614730166e12ff92752cb\jetified-eventbus-activity-scope-1.1.0\AndroidManifest.xml:13:13-37
+404            android:multiprocess="true" />
+404-->[me.yokeyword:eventbus-activity-scope:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\efeb0134118614730166e12ff92752cb\jetified-eventbus-activity-scope-1.1.0\AndroidManifest.xml:14:13-40
+405
+406        <service android:name="com.liuwei.android.upnpcast.service.NLUpnpCastService" />
+406-->[:core] D:\axys6.5.2\core\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:9-89
+406-->[:core] D:\axys6.5.2\core\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:18-86
+407
+408        <activity
+408-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:73:9-77:63
+409            android:name="com.youxiao.ssp.activity.SSPGameActivity"
+409-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:74:13-68
+410            android:launchMode="singleTask"
+410-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:75:13-44
+411            android:screenOrientation="portrait"
+411-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:76:13-49
+412            android:theme="@android:style/Theme.NoTitleBar" />
+412-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:77:13-60
+413        <activity
+413-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:78:9-82:63
+414            android:name="com.youxiao.ssp.activity.SSPTaskActivity"
+414-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:79:13-68
+415            android:launchMode="singleTask"
+415-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:80:13-44
+416            android:screenOrientation="portrait"
+416-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:81:13-49
+417            android:theme="@android:style/Theme.NoTitleBar" />
+417-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:82:13-60
+418        <activity
+418-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:83:9-87:63
+419            android:name="com.youxiao.ssp.activity.SSPSuperTaskActivity"
+419-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:84:13-73
+420            android:launchMode="singleTask"
+420-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:85:13-44
+421            android:screenOrientation="portrait"
+421-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:86:13-49
+422            android:theme="@android:style/Theme.NoTitleBar" />
+422-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:87:13-60
+423        <activity
+423-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:88:9-92:63
+424            android:name="com.youxiao.ssp.activity.SSPVideoContentActivity"
+424-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:89:13-76
+425            android:launchMode="singleTask"
+425-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:90:13-44
+426            android:screenOrientation="portrait"
+426-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:91:13-49
+427            android:theme="@android:style/Theme.NoTitleBar" />
+427-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:92:13-60
+428
+429        <receiver android:name="com.youxiao.ssp.base.receiver.SSPNtReceiver" />
+429-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:94:9-80
+429-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:94:19-77
+430
+431        <activity
+431-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:96:9-99:63
+432            android:name="com.youxiao.ssp.base.activity.SSPWebActivity"
+432-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:97:13-72
+433            android:screenOrientation="portrait"
+433-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:98:13-49
+434            android:theme="@android:style/Theme.NoTitleBar" />
+434-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:99:13-60
+435        <activity
+435-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:100:9-103:63
+436            android:name="com.youxiao.ssp.base.activity.SSPExtActivity"
+436-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:101:13-72
+437            android:screenOrientation="portrait"
+437-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:102:13-49
+438            android:theme="@android:style/Theme.NoTitleBar" />
+438-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:103:13-60
+439
+440        <provider
+440-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:105:9-113:20
+441            android:name="com.youxiao.ssp.ad.provider.GDTFileProvider"
+441-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:106:13-71
+442            android:authorities="cn.axsp.axys.fileprovider"
+442-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:107:13-64
+443            android:exported="false"
+443-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:108:13-37
+444            android:grantUriPermissions="true" >
+444-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:109:13-47
+445            <meta-data
+445-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:62:13-64:54
+446                android:name="android.support.FILE_PROVIDER_PATHS"
+446-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:63:17-67
+447                android:resource="@xml/file_paths" />
+447-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:64:17-51
+448        </provider>
+449        <provider
+449-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:114:9-122:20
+450            android:name="com.qq.e.comm.GDTFileProvider"
+450-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:115:13-57
+451            android:authorities="cn.axsp.axys.gdt.fileprovider"
+451-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:116:13-68
+452            android:exported="false"
+452-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:117:13-37
+453            android:grantUriPermissions="true" >
+453-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:118:13-47
+454            <meta-data
+454-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:62:13-64:54
+455                android:name="android.support.FILE_PROVIDER_PATHS"
+455-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:63:17-67
+456                android:resource="@xml/gdt_file_path" />
+456-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:64:17-51
+457        </provider>
+458
+459        <service
+459-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:124:9-127:43
+460            android:name="com.qq.e.comm.DownloadService"
+460-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:125:13-57
+461            android:exported="false"
+461-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:126:13-37
+462            android:multiprocess="true" />
+462-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:127:13-40
+463
+464        <activity
+464-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:129:9-132:43
+465            android:name="com.qq.e.ads.ADActivity"
+465-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:130:13-51
+466            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+466-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:131:13-83
+467            android:multiprocess="true" />
+467-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:132:13-40
+468        <activity
+468-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:133:9-137:52
+469            android:name="com.qq.e.ads.PortraitADActivity"
+469-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:134:13-59
+470            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+470-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:135:13-83
+471            android:multiprocess="true"
+471-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:136:13-40
+472            android:screenOrientation="portrait" />
+472-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:137:13-49
+473        <activity
+473-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:138:9-143:57
+474            android:name="com.qq.e.ads.LandscapeADActivity"
+474-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:139:13-60
+475            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+475-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:140:13-83
+476            android:multiprocess="true"
+476-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:141:13-40
+477            android:screenOrientation="landscape" />
+477-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:142:13-50
+478        <activity
+478-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:159:9-161:52
+479            android:name="com.youxiao.ssp.ad.activity.SSPAdDetailsActivity"
+479-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:160:13-76
+480            android:screenOrientation="portrait" />
+480-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:161:13-49
+481        <activity
+481-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:162:9-166:74
+482            android:name="com.youxiao.ssp.ad.activity.SSPRewardVideoActivity"
+482-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:163:13-78
+483            android:configChanges="orientation|keyboard|keyboardHidden|screenSize"
+483-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:164:13-83
+484            android:exported="false"
+484-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:165:13-37
+485            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+485-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:166:13-71
+486
+487        <meta-data
+487-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:168:9-170:168
+488            android:name="ZEUS_PLUGIN_PANGLE"
+488-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:169:13-46
+489            android:value="{                 apiVersionCode:4019,                 packageName:com.byted.pangle,                 minPluginVersion:4019             }" />
+489-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:170:13-165
+490
+491        <activity
+491-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:172:9-177:70
+492            android:name="com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Activity"
+492-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:173:13-92
+493            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+493-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:174:13-85
+494            android:exported="false"
+494-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:175:13-37
+495            android:launchMode="standard"
+495-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:176:13-42
+496            android:windowSoftInputMode="adjustResize|stateHidden" />
+496-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:177:13-67
+497        <activity
+497-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:178:9-184:70
+498            android:name="com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity"
+498-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:179:13-101
+499            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+499-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:180:13-85
+500            android:exported="false"
+500-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:181:13-37
+501            android:launchMode="standard"
+501-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:182:13-42
+502            android:screenOrientation="portrait"
+502-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:183:13-49
+503            android:windowSoftInputMode="adjustResize|stateHidden" />
+503-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:184:13-67
+504        <activity
+504-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:185:9-191:70
+505            android:name="com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Activity_T"
+505-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:186:13-94
+506            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+506-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:187:13-85
+507            android:exported="false"
+507-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:188:13-37
+508            android:launchMode="standard"
+508-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:189:13-42
+509            android:theme="@android:style/Theme.Translucent"
+509-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:190:13-61
+510            android:windowSoftInputMode="adjustResize|stateHidden" />
+510-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:191:13-67
+511        <activity
+511-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:192:9-198:70
+512            android:name="com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Landscape_Activity"
+512-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:193:13-102
+513            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+513-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:194:13-85
+514            android:exported="false"
+514-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:195:13-37
+515            android:launchMode="standard"
+515-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:196:13-42
+516            android:screenOrientation="landscape"
+516-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:197:13-50
+517            android:windowSoftInputMode="adjustResize|stateHidden" />
+517-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:198:13-67
+518        <activity
+518-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:199:9-203:70
+519            android:name="com.bytedance.sdk.openadsdk.stub.activity.Stub_Activity"
+519-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:200:13-83
+520            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+520-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:201:13-85
+521            android:exported="false"
+521-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:202:13-37
+522            android:windowSoftInputMode="adjustResize|stateHidden" />
+522-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:203:13-67
+523        <activity
+523-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:204:9-210:70
+524            android:name="com.bytedance.sdk.openadsdk.stub.activity.Stub_SingleTask_Activity_T"
+524-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:205:13-96
+525            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+525-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:206:13-85
+526            android:exported="false"
+526-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:207:13-37
+527            android:launchMode="singleTask"
+527-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:208:13-44
+528            android:theme="@android:style/Theme.Translucent"
+528-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:209:13-61
+529            android:windowSoftInputMode="adjustResize|stateHidden" />
+529-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:210:13-67
+530        <activity
+530-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:211:9-216:70
+531            android:name="com.bytedance.sdk.openadsdk.stub.activity.Stub_SingleTask_Activity"
+531-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:212:13-94
+532            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+532-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:213:13-85
+533            android:exported="false"
+533-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:214:13-37
+534            android:launchMode="singleTask"
+534-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:215:13-44
+535            android:windowSoftInputMode="adjustResize|stateHidden" />
+535-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:216:13-67
+536
+537        <provider
+537-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:218:9-222:45
+538            android:name="com.bytedance.sdk.openadsdk.stub.server.DownloaderServerManager"
+538-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:219:13-91
+539            android:authorities="cn.axsp.axys.pangle.servermanager.downloader.com.bytedance.sdk.openadsdk.adhost"
+539-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:220:13-118
+540            android:exported="false"
+540-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:221:13-37
+541            android:process=":downloader" />
+541-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:222:13-42
+542        <provider
+542-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:223:9-226:40
+543            android:name="com.bytedance.pangle.servermanager.MainServerManager"
+543-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:224:13-80
+544            android:authorities="cn.axsp.axys.pangle.servermanager.main"
+544-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:225:13-77
+545            android:exported="false" />
+545-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:226:13-37
+546        <provider
+546-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:227:9-230:40
+547            android:name="com.bytedance.pangle.provider.MainProcessProviderProxy"
+547-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:228:13-82
+548            android:authorities="cn.axsp.axys.pangle.provider.proxy.main"
+548-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:229:13-78
+549            android:exported="false" />
+549-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:230:13-37
+550
+551        <activity android:name="com.ss.android.downloadlib.addownload.compliance.AppPrivacyPolicyActivity" />
+551-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:232:9-110
+551-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:232:19-107
+552        <activity android:name="com.ss.android.downloadlib.addownload.compliance.AppDetailInfoActivity" />
+552-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:233:9-107
+552-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:233:19-104
+553        <activity
+553-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:234:9-237:75
+554            android:name="com.ss.android.downloadlib.activity.TTDelegateActivity"
+554-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:235:13-82
+555            android:launchMode="singleTask"
+555-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:236:13-44
+556            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+556-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:237:13-72
+557        <activity
+557-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:238:9-241:75
+558            android:name="com.ss.android.downloadlib.activity.JumpKllkActivity"
+558-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:239:13-80
+559            android:launchMode="singleTask"
+559-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:240:13-44
+560            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+560-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:241:13-72
+561
+562        <receiver android:name="com.ss.android.downloadlib.core.download.DownloadReceiver" /> <!-- APP DOWNLOADER START -->
+562-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:243:9-94
+562-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:243:19-91
+563        <service android:name="com.ss.android.socialbase.appdownloader.DownloadHandlerService" /> <!-- <receiver android:name="com.ss.android.socialbase.appdownloader.DownloadReceiver"> -->
+563-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:244:9-98
+563-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:244:18-95
+564        <!-- <intent-filter> -->
+565        <!-- <action android:name="android.intent.action.BOOT_COMPLETED"/> -->
+566        <!-- <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/> -->
+567        <!-- <action android:name="android.ss.intent.action.DOWNLOAD_COMPLETE"/> -->
+568        <!-- </intent-filter> -->
+569        <!-- <intent-filter> -->
+570        <!-- <action android:name="android.intent.action.PACKAGE_ADDED"/> -->
+571        <!-- <action android:name="android.intent.action.PACKAGE_REPLACED"/> -->
+572        <!-- <data android:scheme="package"/> -->
+573        <!-- </intent-filter> -->
+574        <!-- <intent-filter> -->
+575        <!-- <action android:name="android.intent.action.MEDIA_MOUNTED"/> -->
+576        <!-- <data android:scheme="file"/> -->
+577        <!-- </intent-filter> -->
+578        <!-- </receiver> -->
+579        <activity
+579-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:260:9-263:59
+580            android:name="com.ss.android.socialbase.appdownloader.view.DownloadTaskDeleteActivity"
+580-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:261:13-99
+581            android:launchMode="singleTask"
+581-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:262:13-44
+582            android:theme="@android:style/Theme.Dialog" />
+582-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:263:13-56
+583        <activity
+583-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:264:9-267:59
+584            android:name="com.ss.android.socialbase.appdownloader.view.JumpUnknownSourceActivity"
+584-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:265:13-98
+585            android:launchMode="singleTask"
+585-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:266:13-44
+586            android:theme="@android:style/Theme.Dialog" />
+586-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:267:13-56
+587
+588        <service
+588-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:269:9-273:72
+589            android:name="com.ss.android.socialbase.appdownloader.RetryJobSchedulerService"
+589-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:270:13-92
+590            android:enabled="true"
+590-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:271:13-35
+591            android:exported="false"
+591-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:272:13-37
+592            android:permission="android.permission.BIND_JOB_SERVICE" />
+592-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:273:13-69
+593        <service
+593-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:274:9-281:19
+594            android:name="com.ss.android.socialbase.downloader.downloader.IndependentProcessDownloadService"
+594-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:275:13-109
+595            android:exported="false"
+595-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:276:13-37
+596            android:process=":downloader" >
+596-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:277:13-42
+597            <intent-filter>
+597-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:278:13-280:29
+598                <action android:name="com.ss.android.socialbase.downloader.remote" />
+598-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:279:17-86
+598-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:279:25-83
+599            </intent-filter>
+600        </service>
+601        <service android:name="com.ss.android.socialbase.downloader.notification.DownloadNotificationService" />
+601-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:282:9-113
+601-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:282:18-110
+602        <service android:name="com.ss.android.socialbase.downloader.downloader.DownloadService" />
+602-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:283:9-99
+602-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:283:18-96
+603        <service android:name="com.ss.android.socialbase.downloader.impls.DownloadHandleService" /> <!-- <receiver android:name="com.ss.android.socialbase.downloader.downloader.DownloadReceiver"> -->
+603-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:284:9-100
+603-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:284:18-97
+604        <!-- <intent-filter> -->
+605        <!-- <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/> -->
+606        <!-- </intent-filter> -->
+607        <!-- </receiver> -->
+608        <!-- 数据库更新service -->
+609        <service android:name="com.ss.android.socialbase.downloader.downloader.SqlDownloadCacheService" /> <!-- 用于激励视频可选广告的竖屏透明背景activity -->
+609-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:290:9-107
+609-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:290:18-104
+610        <activity
+610-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:291:9-299:20
+611            android:name="com.qq.e.ads.RewardvideoPortraitADActivity"
+611-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:292:13-70
+612            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+612-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:293:13-83
+613            android:multiprocess="true"
+613-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:294:13-40
+614            android:theme="@android:style/Theme.Light.NoTitleBar" >
+614-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:295:13-66
+615            <meta-data
+615-->[com.lxj:xpermission:1.0.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\07a847445270e95fc3079e8bbabf8c01\jetified-xpermission-1.0.1\AndroidManifest.xml:12:9-14:36
+616                android:name="android.notch_support"
+616-->[com.lxj:xpermission:1.0.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\07a847445270e95fc3079e8bbabf8c01\jetified-xpermission-1.0.1\AndroidManifest.xml:13:13-49
+617                android:value="true" />
+617-->[com.lxj:xpermission:1.0.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\07a847445270e95fc3079e8bbabf8c01\jetified-xpermission-1.0.1\AndroidManifest.xml:14:13-33
+618        </activity> <!-- 用于激励视频可选广告的横屏透明背景activity -->
+619        <activity
+619-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:300:9-309:20
+620            android:name="com.qq.e.ads.RewardvideoLandscapeADActivity"
+620-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:301:13-71
+621            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+621-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:302:13-83
+622            android:multiprocess="true"
+622-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:303:13-40
+623            android:screenOrientation="landscape"
+623-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:304:13-50
+624            android:theme="@android:style/Theme.Light.NoTitleBar" >
+624-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:305:13-66
+625            <meta-data
+625-->[com.lxj:xpermission:1.0.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\07a847445270e95fc3079e8bbabf8c01\jetified-xpermission-1.0.1\AndroidManifest.xml:12:9-14:36
+626                android:name="android.notch_support"
+626-->[com.lxj:xpermission:1.0.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\07a847445270e95fc3079e8bbabf8c01\jetified-xpermission-1.0.1\AndroidManifest.xml:13:13-49
+627                android:value="true" />
+627-->[com.lxj:xpermission:1.0.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\07a847445270e95fc3079e8bbabf8c01\jetified-xpermission-1.0.1\AndroidManifest.xml:14:13-33
+628        </activity>
+629        <activity
+629-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:310:9-313:86
+630            android:name="com.qq.e.ads.DialogActivity"
+630-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:311:13-55
+631            android:multiprocess="true"
+631-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:312:13-40
+632            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+632-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:313:13-83
+633
+634        <receiver
+634-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:315:9-324:20
+635            android:name="com.kuaishou.weapon.WeaponRECE"
+635-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:316:13-58
+636            android:exported="false" >
+636-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:317:13-37
+637            <intent-filter>
+637-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:318:13-323:29
+638                <action android:name="com.kuaishou.action.WEAPON.VIEW" />
+638-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:319:17-74
+638-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:319:25-71
+639
+640                <category android:name="com.kuaishou.category.WEAPON" />
+640-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:321:17-73
+640-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:321:27-70
+641                <category android:name="android.intent.category.DEFAULT" />
+641-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:223:17-76
+641-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:223:27-73
+642            </intent-filter>
+643        </receiver>
+644
+645        <service
+645-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:326:9-335:19
+646            android:name="com.kuaishou.weapon.WeaponS"
+646-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:327:13-55
+647            android:exported="false" >
+647-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:328:13-37
+648            <intent-filter>
+648-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:318:13-323:29
+649                <action android:name="com.kuaishou.action.WEAPON.VIEW" />
+649-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:319:17-74
+649-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:319:25-71
+650
+651                <category android:name="com.kuaishou.category.WEAPON" />
+651-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:321:17-73
+651-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:321:27-70
+652                <category android:name="android.intent.category.DEFAULT" />
+652-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:223:17-76
+652-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:223:27-73
+653            </intent-filter>
+654        </service>
+655
+656        <activity
+656-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:337:9-341:69
+657            android:name="com.kwad.sdk.api.proxy.app.AdWebViewActivity"
+657-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:338:13-72
+658            android:configChanges="keyboardHidden|orientation|screenSize"
+658-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:339:13-74
+659            android:screenOrientation="portrait"
+659-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:340:13-49
+660            android:theme="@android:style/Theme.Light.NoTitleBar" />
+660-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:341:13-66
+661        <activity
+661-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:342:9-346:80
+662            android:name="com.kwad.sdk.api.proxy.app.KsFullScreenVideoActivity"
+662-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:343:13-80
+663            android:configChanges="keyboardHidden|orientation|screenSize"
+663-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:344:13-74
+664            android:screenOrientation="behind"
+664-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:345:13-47
+665            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" />
+665-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:346:13-77
+666        <activity
+666-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:347:9-351:80
+667            android:name="com.kwad.sdk.api.proxy.app.KsFullScreenLandScapeVideoActivity"
+667-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:348:13-89
+668            android:configChanges="keyboardHidden|orientation|screenSize"
+668-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:349:13-74
+669            android:screenOrientation="landscape"
+669-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:350:13-50
+670            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" />
+670-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:351:13-77
+671        <activity
+671-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:352:9-356:80
+672            android:name="com.kwad.sdk.api.proxy.app.KsRewardVideoActivity"
+672-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:353:13-76
+673            android:configChanges="keyboardHidden|orientation|screenSize"
+673-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:354:13-74
+674            android:screenOrientation="portrait"
+674-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:355:13-49
+675            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" />
+675-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:356:13-77
+676        <activity
+676-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:357:9-361:80
+677            android:name="com.kwad.sdk.api.proxy.app.KSRewardLandScapeVideoActivity"
+677-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:358:13-85
+678            android:configChanges="keyboardHidden|orientation|screenSize"
+678-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:359:13-74
+679            android:screenOrientation="landscape"
+679-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:360:13-50
+680            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" />
+680-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:361:13-77
+681        <activity
+681-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:362:9-366:80
+682            android:name="com.kwad.sdk.api.proxy.app.FeedDownloadActivity"
+682-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:363:13-75
+683            android:configChanges="keyboardHidden|orientation|screenSize"
+683-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:364:13-74
+684            android:screenOrientation="portrait"
+684-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:365:13-49
+685            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" />
+685-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:366:13-77
+686        <activity
+686-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:367:9-371:69
+687            android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$KsTrendsActivity"
+687-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:368:13-92
+688            android:configChanges="keyboardHidden|orientation|screenSize"
+688-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:369:13-74
+689            android:screenOrientation="portrait"
+689-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:370:13-49
+690            android:theme="@android:style/Theme.Light.NoTitleBar" />
+690-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:371:13-66
+691        <activity
+691-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:372:9-375:52
+692            android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$ProfileHomeActivity"
+692-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:373:13-95
+693            android:configChanges="keyboardHidden|orientation|screenSize"
+693-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:374:13-74
+694            android:screenOrientation="portrait" />
+694-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:375:13-49
+695        <activity
+695-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:376:9-379:52
+696            android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$GoodsPlayBackActivity"
+696-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:377:13-97
+697            android:configChanges="keyboardHidden|orientation|screenSize"
+697-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:378:13-74
+698            android:screenOrientation="portrait" />
+698-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:379:13-49
+699        <activity
+699-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:380:9-383:52
+700            android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$ProfileVideoDetailActivity"
+700-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:381:13-102
+701            android:configChanges="keyboardHidden|orientation|screenSize"
+701-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:382:13-74
+702            android:screenOrientation="portrait" />
+702-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:383:13-49
+703        <activity
+703-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:384:9-387:52
+704            android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$TubeProfileActivity"
+704-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:385:13-95
+705            android:configChanges="keyboardHidden|orientation|screenSize"
+705-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:386:13-74
+706            android:screenOrientation="portrait" />
+706-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:387:13-49
+707        <activity
+707-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:388:9-391:52
+708            android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$TubeDetailActivity"
+708-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:389:13-94
+709            android:configChanges="keyboardHidden|orientation|screenSize"
+709-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:390:13-74
+710            android:screenOrientation="portrait" />
+710-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:391:13-49
+711        <activity
+711-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:392:9-395:52
+712            android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$EpisodeDetailActivity"
+712-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:393:13-97
+713            android:configChanges="keyboardHidden|orientation|screenSize"
+713-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:394:13-74
+714            android:screenOrientation="portrait" />
+714-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:395:13-49
+715        <activity
+715-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:396:9-400:80
+716            android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity1"
+716-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:397:13-93
+717            android:configChanges="keyboardHidden|orientation|screenSize"
+717-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:398:13-74
+718            android:screenOrientation="portrait"
+718-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:399:13-49
+719            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" />
+719-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:400:13-77
+720        <activity
+720-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:401:9-405:80
+721            android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity2"
+721-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:402:13-93
+722            android:configChanges="keyboardHidden|orientation|screenSize"
+722-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:403:13-74
+723            android:screenOrientation="portrait"
+723-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:404:13-49
+724            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" />
+724-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:405:13-77
+725        <activity
+725-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:406:9-410:80
+726            android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity3"
+726-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:407:13-93
+727            android:configChanges="keyboardHidden|orientation|screenSize"
+727-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:408:13-74
+728            android:screenOrientation="portrait"
+728-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:409:13-49
+729            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" />
+729-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:410:13-77
+730        <activity
+730-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:411:9-414:52
+731            android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity4"
+731-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:412:13-93
+732            android:configChanges="keyboardHidden|orientation|screenSize"
+732-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:413:13-74
+733            android:screenOrientation="portrait" />
+733-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:414:13-49
+734        <activity
+734-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:415:9-418:52
+735            android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity5"
+735-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:416:13-93
+736            android:configChanges="keyboardHidden|orientation|screenSize"
+736-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:417:13-74
+737            android:screenOrientation="portrait" />
+737-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:418:13-49
+738        <activity
+738-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:419:9-422:52
+739            android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity6"
+739-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:420:13-93
+740            android:configChanges="keyboardHidden|orientation|screenSize"
+740-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:421:13-74
+741            android:screenOrientation="portrait" />
+741-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:422:13-49
+742        <activity
+742-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:423:9-426:52
+743            android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity7"
+743-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:424:13-93
+744            android:configChanges="keyboardHidden|orientation|screenSize"
+744-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:425:13-74
+745            android:screenOrientation="portrait" />
+745-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:426:13-49
+746        <activity
+746-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:427:9-430:52
+747            android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity8"
+747-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:428:13-93
+748            android:configChanges="keyboardHidden|orientation|screenSize"
+748-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:429:13-74
+749            android:screenOrientation="portrait" />
+749-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:430:13-49
+750        <activity
+750-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:431:9-434:52
+751            android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity9"
+751-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:432:13-93
+752            android:configChanges="keyboardHidden|orientation|screenSize"
+752-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:433:13-74
+753            android:screenOrientation="portrait" />
+753-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:434:13-49
+754        <activity
+754-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:435:9-438:52
+755            android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity10"
+755-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:436:13-94
+756            android:configChanges="keyboardHidden|orientation|screenSize"
+756-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:437:13-74
+757            android:screenOrientation="portrait" />
+757-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:438:13-49
+758        <activity
+758-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:439:9-443:52
+759            android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivitySingleTop1"
+759-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:440:13-102
+760            android:configChanges="keyboardHidden|orientation|screenSize"
+760-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:441:13-74
+761            android:launchMode="singleTop"
+761-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:442:13-43
+762            android:screenOrientation="portrait" />
+762-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:443:13-49
+763        <activity
+763-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:444:9-448:52
+764            android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivitySingleTop2"
+764-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:445:13-102
+765            android:configChanges="keyboardHidden|orientation|screenSize"
+765-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:446:13-74
+766            android:launchMode="singleTop"
+766-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:447:13-43
+767            android:screenOrientation="portrait" />
+767-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:448:13-49
+768        <activity
+768-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:449:9-453:52
+769            android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivitySingleInstance1"
+769-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:450:13-107
+770            android:configChanges="keyboardHidden|orientation|screenSize"
+770-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:451:13-74
+771            android:launchMode="singleInstance"
+771-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:452:13-48
+772            android:screenOrientation="portrait" />
+772-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:453:13-49
+773        <activity
+773-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:454:9-458:52
+774            android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivitySingleInstance2"
+774-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:455:13-107
+775            android:configChanges="keyboardHidden|orientation|screenSize"
+775-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:456:13-74
+776            android:launchMode="singleInstance"
+776-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:457:13-48
+777            android:screenOrientation="portrait" />
+777-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:458:13-49
+778        <activity
+778-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:459:9-464:80
+779            android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$DeveloperConfigActivity"
+779-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:460:13-99
+780            android:configChanges="keyboardHidden|orientation|screenSize"
+780-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:461:13-74
+781            android:launchMode="singleInstance"
+781-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:462:13-48
+782            android:screenOrientation="portrait"
+782-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:463:13-49
+783            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" />
+783-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:464:13-77
+784
+785        <service android:name="com.kwad.sdk.api.proxy.app.FileDownloadService$SharedMainProcessService" />
+785-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:466:9-107
+785-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:466:18-104
+786        <service android:name="com.kwad.sdk.api.proxy.app.FileDownloadService$SeparateProcessService" />
+786-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:467:9-105
+786-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:467:18-102
+787        <service
+787-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:468:9-470:40
+788            android:name="com.kwad.sdk.api.proxy.app.DownloadService"
+788-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:469:13-70
+789            android:exported="false" />
+789-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:470:13-37
+790        <service
+790-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:471:9-474:47
+791            android:name="com.kwad.sdk.api.proxy.app.ServiceProxyRemote"
+791-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:472:13-73
+792            android:exported="false"
+792-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:473:13-37
+793            android:process=":kssdk_remote" />
+793-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:474:13-44
+794        <service
+794-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:475:9-485:19
+795            android:name="com.kwad.sdk.api.proxy.VideoWallpaperService"
+795-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:476:13-72
+796            android:permission="android.permission.BIND_WALLPAPER" >
+796-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:477:13-67
+797            <intent-filter android:priority="1000" >
+797-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:478:13-480:29
+797-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:478:28-51
+798                <action android:name="android.service.wallpaper.WallpaperService" />
+798-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:479:17-85
+798-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:479:25-82
+799            </intent-filter>
+800
+801            <meta-data
+801-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:482:13-484:58
+802                android:name="android.service.wallpaper"
+802-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:483:17-57
+803                android:resource="@xml/ksad_wallpaper" />
+803-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:484:17-55
+804        </service>
+805
+806        <provider
+806-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:487:9-495:20
+807            android:name="com.kwad.sdk.api.proxy.app.AdSdkFileProvider"
+807-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:488:13-72
+808            android:authorities="cn.axsp.axys.adFileProvider"
+808-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:489:13-66
+809            android:exported="false"
+809-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:490:13-37
+810            android:grantUriPermissions="true" >
+810-->[:ssp_ad_content_sdk_v4.5.0:] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\00ed5d01a49aebc29084c257b1748e03\jetified-ssp_ad_content_sdk_v4.5.0\AndroidManifest.xml:491:13-47
+811            <meta-data
+811-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:62:13-64:54
+812                android:name="android.support.FILE_PROVIDER_PATHS"
+812-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:63:17-67
+813                android:resource="@xml/ksad_file_paths" />
+813-->D:\axys6.5.2\app\src\main\AndroidManifest.xml:64:17-51
+814        </provider>
+815
+816        <service
+816-->[androidx.room:room-runtime:2.2.5] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\76a2e36624971b2438568c9fda8f4e7f\room-runtime-2.2.5\AndroidManifest.xml:25:9-28:40
+817            android:name="androidx.room.MultiInstanceInvalidationService"
+817-->[androidx.room:room-runtime:2.2.5] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\76a2e36624971b2438568c9fda8f4e7f\room-runtime-2.2.5\AndroidManifest.xml:26:13-74
+818            android:directBootAware="true"
+818-->[androidx.room:room-runtime:2.2.5] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\76a2e36624971b2438568c9fda8f4e7f\room-runtime-2.2.5\AndroidManifest.xml:27:13-43
+819            android:exported="false" />
+819-->[androidx.room:room-runtime:2.2.5] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\76a2e36624971b2438568c9fda8f4e7f\room-runtime-2.2.5\AndroidManifest.xml:28:13-37
+820    </application>
+821
+822</manifest>

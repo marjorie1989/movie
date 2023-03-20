@@ -1,0 +1,15 @@
+int attr enableAudioFocus 0x0
+int attr looping 0x0
+int attr playerBackgroundColor 0x0
+int attr screenScaleType 0x0
+int id type_16_9 0x0
+int id type_4_3 0x0
+int id type_center_crop 0x0
+int id type_default 0x0
+int id type_match_parent 0x0
+int id type_original 0x0
+int[] styleable VideoView { 0x0, 0x0, 0x0, 0x0 }
+int styleable VideoView_enableAudioFocus 0
+int styleable VideoView_looping 1
+int styleable VideoView_playerBackgroundColor 2
+int styleable VideoView_screenScaleType 3

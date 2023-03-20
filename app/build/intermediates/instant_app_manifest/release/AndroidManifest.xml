@@ -1,0 +1,822 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.axsp.axys"
+    android:targetSandboxVersion="2"
+    android:versionCode="220"
+    android:versionName="6.5.0" >
+
+    <uses-sdk
+        android:minSdkVersion="26"
+        android:targetSdkVersion="26" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 必要权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 必要权限，解决安全风险漏洞，发送和注册广播事件需要调用带有传递权限的接口 -->
+    <permission
+        android:name="cn.axsp.axys.openadsdk.permission.TT_PANGOLIN"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="cn.axsp.axys.openadsdk.permission.TT_PANGOLIN" />
+    <!-- 可选权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <!-- 加入新权限 2022-04-19 -->
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <!-- 请注意：无论通过何种方式提供给穿山甲用户地理位置，均需向用户声明地理位置权限将应用于穿山甲广告投放，穿山甲不强制获取地理位置信息 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 如果视频广告使用textureView播放，请务必添加，否则黑屏 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- demo场景用到的权限，不是必须的 -->
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+    <!-- demo场景用到的权限，不是必须的 -->
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />
+    <uses-permission android:name="android.permission.DELETE_CACHE_FILES" />
+
+    <!-- Don't require camera, as this requires a rear camera. This allows it to work on the Nexus 7 -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" /> <!-- TODO replace above two with next line after Android 4.2 -->
+    <!-- <uses-feature android:name="android.hardware.camera.any"/> -->
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.screen.landscape"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.wifi"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" /> <!-- <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE" /> -->
+    <uses-permission android:name="android.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_ADDED" />
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_CHANGED" />
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_INSTALL" />
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_REPLACED" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE" />
+    <uses-permission android:name="com.asus.msa.SupplementaryDID.ACCESS" />
+    <uses-permission android:name="freemme.permission.msa" />
+
+    <permission
+        android:name="cn.axsp.axys.permission.KW_SDK_BROADCAST"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="cn.axsp.axys.permission.KW_SDK_BROADCAST" />
+
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+
+            <category android:name="android.intent.category.BROWSABLE" />
+
+            <data android:scheme="https" />
+        </intent>
+    </queries>
+
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.REORDER_TASKS" />
+    <uses-permission android:name="android.permission.VIBRATE" /> <!-- 动态壁纸权限 -->
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+
+    <application
+        android:name="cn.lvdou.vod.App"
+        android:allowBackup="false"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:extractNativeLibs="false"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:resizeableActivity="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true" >
+        <provider
+            android:name="com.bytedance.sdk.openadsdk.TTFileProvider"
+            android:authorities="cn.axsp.axys.TTFileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+        <provider
+            android:name="com.bytedance.sdk.openadsdk.multipro.TTMultiProvider"
+            android:authorities="cn.axsp.axys.TTMultiProvider"
+            android:exported="false" />
+
+        <activity android:name="cn.lvdou.vod.ui.task.MainActivity33" />
+        <activity
+            android:name="cn.lvdou.vod.ui.browser.BrowserActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="unspecified" />
+        <activity
+            android:name="cn.lvdou.vod.ui.collection.CollectionActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="unspecified" />
+        <activity
+            android:name="cn.lvdou.vod.ui.feedback.FeedbackActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="unspecified" />
+        <activity
+            android:name="cn.lvdou.vod.ui.down.AllDownloadActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="unspecified" />
+        <activity
+            android:name="cn.lvdou.vod.ui.withdraw.GoldWithdrawActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="unspecified" />
+        <activity
+            android:name="cn.lvdou.vod.ui.share.ShareActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="unspecified" />
+        <activity android:name="cn.lvdou.vod.ui.account.ChangeNicknameActivity" />
+        <activity
+            android:name="cn.lvdou.vod.ui.account.AccountSettingActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="unspecified" />
+        <activity
+            android:name="cn.lvdou.vod.ui.pay.PayActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="unspecified" />
+        <activity
+            android:name="cn.lvdou.vod.ui.home.HomeFristMoreActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="unspecified" />
+        <activity
+            android:name="cn.lvdou.vod.ui.score.PlayScoreActivity"
+            android:label="@string/title_activity_play_score"
+            android:launchMode="singleTop"
+            android:screenOrientation="unspecified"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="cn.lvdou.vod.ui.filtrate.FiltrateActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="unspecified" />
+
+        <!-- <activity -->
+        <!-- android:name=".ui.login.AgreementActivity" -->
+        <!-- android:launchMode="singleTop" -->
+        <!-- android:screenOrientation="unspecified" /> -->
+        <activity
+            android:name="cn.lvdou.vod.ui.seek.SeekActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="unspecified"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name="cn.lvdou.vod.ui.screen.ScreenActivity2"
+            android:launchMode="singleTop"
+            android:screenOrientation="unspecified"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="cn.lvdou.vod.ui.screen.ScreenActivity3"
+            android:launchMode="singleTop"
+            android:screenOrientation="unspecified"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="cn.lvdou.vod.ui.login.LoginActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="unspecified" />
+        <activity
+            android:name="cn.lvdou.vod.ui.login.ForgetPswActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="unspecified" />
+        <activity
+            android:name="cn.lvdou.vod.ui.task.TaskActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="unspecified" />
+        <activity
+            android:name="cn.lvdou.vod.ui.task.TaskActivity2"
+            android:launchMode="singleTop"
+            android:screenOrientation="unspecified" />
+        <activity
+            android:name="cn.lvdou.vod.ui.notice.MessageCenterActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="unspecified" />
+        <activity
+            android:name="cn.lvdou.vod.ui.notice.MessageDetailActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="unspecified" />
+        <activity
+            android:name="cn.lvdou.vod.ui.expand.MyExpandActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="unspecified" />
+        <activity
+            android:name="cn.lvdou.vod.ui.expand.ExpandCenterActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="unspecified" />
+        <activity
+            android:name="cn.lvdou.vod.ui.play.PlayActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden|screenLayout|smallestScreenSize"
+            android:launchMode="standard"
+            android:screenOrientation="unspecified" />
+        <activity
+            android:name="cn.lvdou.vod.ui.play.NewPlayActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden|screenLayout|smallestScreenSize"
+            android:screenOrientation="unspecified" />
+        <!-- android:launchMode="singleTask" -->
+        <activity
+            android:name="cn.lvdou.vod.ui.play.StorePlayActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden|screenLayout|smallestScreenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="unspecified" />
+        <activity
+            android:name="cn.lvdou.vod.ui.play.CastScreenActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden|screenLayout|smallestScreenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="unspecified" />
+        <activity
+            android:name="cn.lvdou.vod.ui.play.CastScreenActivity2"
+            android:configChanges="orientation|screenSize|keyboardHidden|screenLayout|smallestScreenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="unspecified" />
+        <activity
+            android:name="cn.lvdou.vod.MainActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="cn.lvdou.vod.ui.lanuch.LanuchActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="unspecified" />
+        <activity
+            android:name="cn.lvdou.vod.ui.game.WebViewActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="unspecified" />
+        <activity
+            android:name="cn.lvdou.vod.ui.specialtopic.TopicDetailActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="unspecified" />
+        <activity
+            android:name="com.tencent.smtt.sdk.VideoActivity"
+            android:alwaysRetainTaskState="true"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:exported="false"
+            android:launchMode="singleTask" >
+            <intent-filter>
+                <action android:name="com.tencent.smtt.tbs.video.PLAY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.lvdou.vod.ui.play.X5WebViewActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="cn.lvdou.vod.ui.play.X5WebActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="cn.lvdou.vod.ui.start.StartActivity"
+            android:screenOrientation="unspecified"
+            android:theme="@style/AppTheme.Launcher" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="cn.lvdou.vod.TestActivity2" />
+        <activity android:name="cn.lvdou.vod.ui.task.MainActivity3" />
+        <activity android:name="cn.lvdou.vod.TestAes" />
+        <activity android:name="cn.lvdou.vod.MergeTestActivity2" />
+
+        <receiver android:name="cn.lvdou.vod.receiver.ScreenBroadCastReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.SCREEN_ON" />
+                <action android:name="android.intent.action.SCREEN_OFF" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="cn.axsp.axys.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <!--
+        <activity android:name=".TestMergeActivity2">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        -->
+        <service
+            android:name="jaygoo.library.m3u8downloader.service.VideoService"
+            android:exported="false" >
+        </service>
+
+        <activity
+            android:name="com.blankj.utilcode.util.Utils$TransActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:multiprocess="true"
+            android:theme="@style/ActivityTranslucent"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+
+        <provider
+            android:name="com.blankj.utilcode.util.Utils$FileProvider4UtilCode"
+            android:authorities="cn.axsp.axys.utilcode.provider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            android:multiprocess="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/util_code_provider_paths" />
+        </provider>
+
+        <service android:name="com.blankj.utilcode.util.MessengerUtils$ServerService" >
+            <intent-filter>
+                <action android:name="cn.axsp.axys.messenger" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="com.luck.picture.lib.PictureFileProvider"
+            android:authorities="cn.axsp.axys.provider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name="com.luck.picture.lib.PictureSelectorActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.luck.picture.lib.PicturePreviewActivity" />
+        <activity
+            android:name="com.luck.picture.lib.PictureVideoPlayActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="sensor" />
+        <activity android:name="com.luck.picture.lib.PictureExternalPreviewActivity" />
+        <activity android:name="com.yalantis.ucrop.UCropActivity" />
+        <activity android:name="com.yalantis.ucrop.PictureMultiCuttingActivity" />
+        <activity android:name="com.luck.picture.lib.PicturePlayAudioActivity" />
+
+        <meta-data
+            android:name="android.notch_support"
+            android:value="true" /> <!-- <meta-data android:name="android.max_aspect" android:value="2.4" /> -->
+        <!-- PermissonActivity -->
+        <activity
+            android:name="com.lxj.xpermission.XPermission$PermissionActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+            android:clearTaskOnLaunch="true"
+            android:screenOrientation="sensorLandscape"
+            android:stateNotNeeded="true"
+            android:theme="@style/zxing_CaptureTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <provider
+            android:name="me.yokeyword.eventbusactivityscope.RuntimeTrojanProvider"
+            android:authorities="cn.axsp.axys.eventbus_activity_scope_trojan"
+            android:exported="false"
+            android:multiprocess="true" />
+
+        <service android:name="com.liuwei.android.upnpcast.service.NLUpnpCastService" />
+
+        <activity
+            android:name="com.youxiao.ssp.activity.SSPGameActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.youxiao.ssp.activity.SSPTaskActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.youxiao.ssp.activity.SSPSuperTaskActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.youxiao.ssp.activity.SSPVideoContentActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+
+        <receiver android:name="com.youxiao.ssp.base.receiver.SSPNtReceiver" />
+
+        <activity
+            android:name="com.youxiao.ssp.base.activity.SSPWebActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.youxiao.ssp.base.activity.SSPExtActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+
+        <provider
+            android:name="com.youxiao.ssp.ad.provider.GDTFileProvider"
+            android:authorities="cn.axsp.axys.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+        <provider
+            android:name="com.qq.e.comm.GDTFileProvider"
+            android:authorities="cn.axsp.axys.gdt.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/gdt_file_path" />
+        </provider>
+
+        <service
+            android:name="com.qq.e.comm.DownloadService"
+            android:exported="false"
+            android:multiprocess="true" />
+
+        <activity
+            android:name="com.qq.e.ads.ADActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:multiprocess="true" />
+        <activity
+            android:name="com.qq.e.ads.PortraitADActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:multiprocess="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.qq.e.ads.LandscapeADActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:multiprocess="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.youxiao.ssp.ad.activity.SSPAdDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.youxiao.ssp.ad.activity.SSPRewardVideoActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenSize"
+            android:exported="false"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+
+        <meta-data
+            android:name="ZEUS_PLUGIN_PANGLE"
+            android:value="{                 apiVersionCode:4019,                 packageName:com.byted.pangle,                 minPluginVersion:4019             }" />
+
+        <activity
+            android:name="com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Activity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:launchMode="standard"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Activity_T"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:launchMode="standard"
+            android:theme="@android:style/Theme.Translucent"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Landscape_Activity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:launchMode="standard"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.bytedance.sdk.openadsdk.stub.activity.Stub_Activity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.bytedance.sdk.openadsdk.stub.activity.Stub_SingleTask_Activity_T"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.bytedance.sdk.openadsdk.stub.activity.Stub_SingleTask_Activity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <provider
+            android:name="com.bytedance.sdk.openadsdk.stub.server.DownloaderServerManager"
+            android:authorities="cn.axsp.axys.pangle.servermanager.downloader.com.bytedance.sdk.openadsdk.adhost"
+            android:exported="false"
+            android:process=":downloader" />
+        <provider
+            android:name="com.bytedance.pangle.servermanager.MainServerManager"
+            android:authorities="cn.axsp.axys.pangle.servermanager.main"
+            android:exported="false" />
+        <provider
+            android:name="com.bytedance.pangle.provider.MainProcessProviderProxy"
+            android:authorities="cn.axsp.axys.pangle.provider.proxy.main"
+            android:exported="false" />
+
+        <activity android:name="com.ss.android.downloadlib.addownload.compliance.AppPrivacyPolicyActivity" />
+        <activity android:name="com.ss.android.downloadlib.addownload.compliance.AppDetailInfoActivity" />
+        <activity
+            android:name="com.ss.android.downloadlib.activity.TTDelegateActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.ss.android.downloadlib.activity.JumpKllkActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <receiver android:name="com.ss.android.downloadlib.core.download.DownloadReceiver" /> <!-- APP DOWNLOADER START -->
+        <service android:name="com.ss.android.socialbase.appdownloader.DownloadHandlerService" /> <!-- <receiver android:name="com.ss.android.socialbase.appdownloader.DownloadReceiver"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.BOOT_COMPLETED"/> -->
+        <!-- <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/> -->
+        <!-- <action android:name="android.ss.intent.action.DOWNLOAD_COMPLETE"/> -->
+        <!-- </intent-filter> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.PACKAGE_ADDED"/> -->
+        <!-- <action android:name="android.intent.action.PACKAGE_REPLACED"/> -->
+        <!-- <data android:scheme="package"/> -->
+        <!-- </intent-filter> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.MEDIA_MOUNTED"/> -->
+        <!-- <data android:scheme="file"/> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+        <activity
+            android:name="com.ss.android.socialbase.appdownloader.view.DownloadTaskDeleteActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name="com.ss.android.socialbase.appdownloader.view.JumpUnknownSourceActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Dialog" />
+
+        <service
+            android:name="com.ss.android.socialbase.appdownloader.RetryJobSchedulerService"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <service
+            android:name="com.ss.android.socialbase.downloader.downloader.IndependentProcessDownloadService"
+            android:exported="false"
+            android:process=":downloader" >
+            <intent-filter>
+                <action android:name="com.ss.android.socialbase.downloader.remote" />
+            </intent-filter>
+        </service>
+        <service android:name="com.ss.android.socialbase.downloader.notification.DownloadNotificationService" />
+        <service android:name="com.ss.android.socialbase.downloader.downloader.DownloadService" />
+        <service android:name="com.ss.android.socialbase.downloader.impls.DownloadHandleService" /> <!-- <receiver android:name="com.ss.android.socialbase.downloader.downloader.DownloadReceiver"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+        <!-- 数据库更新service -->
+        <service android:name="com.ss.android.socialbase.downloader.downloader.SqlDownloadCacheService" /> <!-- 用于激励视频可选广告的竖屏透明背景activity -->
+        <activity
+            android:name="com.qq.e.ads.RewardvideoPortraitADActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:multiprocess="true"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+            <meta-data
+                android:name="android.notch_support"
+                android:value="true" />
+        </activity> <!-- 用于激励视频可选广告的横屏透明背景activity -->
+        <activity
+            android:name="com.qq.e.ads.RewardvideoLandscapeADActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:multiprocess="true"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+            <meta-data
+                android:name="android.notch_support"
+                android:value="true" />
+        </activity>
+        <activity
+            android:name="com.qq.e.ads.DialogActivity"
+            android:multiprocess="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+
+        <receiver
+            android:name="com.kuaishou.weapon.WeaponRECE"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.kuaishou.action.WEAPON.VIEW" />
+
+                <category android:name="com.kuaishou.category.WEAPON" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.kuaishou.weapon.WeaponS"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.kuaishou.action.WEAPON.VIEW" />
+
+                <category android:name="com.kuaishou.category.WEAPON" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.kwad.sdk.api.proxy.app.AdWebViewActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name="com.kwad.sdk.api.proxy.app.KsFullScreenVideoActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="behind"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.kwad.sdk.api.proxy.app.KsFullScreenLandScapeVideoActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.kwad.sdk.api.proxy.app.KsRewardVideoActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.kwad.sdk.api.proxy.app.KSRewardLandScapeVideoActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.kwad.sdk.api.proxy.app.FeedDownloadActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$KsTrendsActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$ProfileHomeActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$GoodsPlayBackActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$ProfileVideoDetailActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$TubeProfileActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$TubeDetailActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$EpisodeDetailActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity1"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity2"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity3"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity4"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity5"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity6"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity7"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity8"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity9"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity10"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivitySingleTop1"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivitySingleTop2"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivitySingleInstance1"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivitySingleInstance2"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$DeveloperConfigActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" />
+
+        <service android:name="com.kwad.sdk.api.proxy.app.FileDownloadService$SharedMainProcessService" />
+        <service android:name="com.kwad.sdk.api.proxy.app.FileDownloadService$SeparateProcessService" />
+        <service
+            android:name="com.kwad.sdk.api.proxy.app.DownloadService"
+            android:exported="false" />
+        <service
+            android:name="com.kwad.sdk.api.proxy.app.ServiceProxyRemote"
+            android:exported="false"
+            android:process=":kssdk_remote" />
+        <service
+            android:name="com.kwad.sdk.api.proxy.VideoWallpaperService"
+            android:permission="android.permission.BIND_WALLPAPER" >
+            <intent-filter android:priority="1000" >
+                <action android:name="android.service.wallpaper.WallpaperService" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.service.wallpaper"
+                android:resource="@xml/ksad_wallpaper" />
+        </service>
+
+        <provider
+            android:name="com.kwad.sdk.api.proxy.app.AdSdkFileProvider"
+            android:authorities="cn.axsp.axys.adFileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/ksad_file_paths" />
+        </provider>
+
+        <service
+            android:name="androidx.room.MultiInstanceInvalidationService"
+            android:directBootAware="true"
+            android:exported="false" />
+    </application>
+
+</manifest>

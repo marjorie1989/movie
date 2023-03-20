@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="video/app" />
+      <module fileurl="file://$PROJECT_DIR$/core/core.iml" filepath="$PROJECT_DIR$/core/core.iml" group="video/core" />
+      <module fileurl="file://$PROJECT_DIR$/dkplayer-java/dkplayer-java.iml" filepath="$PROJECT_DIR$/dkplayer-java/dkplayer-java.iml" group="video/dkplayer-java" />
+      <module fileurl="file://$PROJECT_DIR$/dkplayer-players/dkplayer-players.iml" filepath="$PROJECT_DIR$/dkplayer-players/dkplayer-players.iml" group="video/dkplayer-players" />
+      <module fileurl="file://$PROJECT_DIR$/dkplayer-ui/dkplayer-ui.iml" filepath="$PROJECT_DIR$/dkplayer-ui/dkplayer-ui.iml" group="video/dkplayer-ui" />
+      <module fileurl="file://$PROJECT_DIR$/dkplayer-videocache/dkplayer-videocache.iml" filepath="$PROJECT_DIR$/dkplayer-videocache/dkplayer-videocache.iml" group="video/dkplayer-videocache" />
+      <module fileurl="file://$PROJECT_DIR$/dkplayer-players/exo/exo.iml" filepath="$PROJECT_DIR$/dkplayer-players/exo/exo.iml" group="video/dkplayer-players/exo" />
+      <module fileurl="file://$PROJECT_DIR$/dkplayer-players/ijk/ijk.iml" filepath="$PROJECT_DIR$/dkplayer-players/ijk/ijk.iml" group="video/dkplayer-players/ijk" />
+      <module fileurl="file://$PROJECT_DIR$/ijkplayer-armv5/ijkplayer-armv5.iml" filepath="$PROJECT_DIR$/ijkplayer-armv5/ijkplayer-armv5.iml" group="video/ijkplayer-armv5" />
+      <module fileurl="file://$PROJECT_DIR$/ijkplayer-armv7a/ijkplayer-armv7a.iml" filepath="$PROJECT_DIR$/ijkplayer-armv7a/ijkplayer-armv7a.iml" group="video/ijkplayer-armv7a" />
+      <module fileurl="file://$PROJECT_DIR$/ijkplayer-java/ijkplayer-java.iml" filepath="$PROJECT_DIR$/ijkplayer-java/ijkplayer-java.iml" group="video/ijkplayer-java" />
+      <module fileurl="file://$PROJECT_DIR$/ijkplayer-x86/ijkplayer-x86.iml" filepath="$PROJECT_DIR$/ijkplayer-x86/ijkplayer-x86.iml" group="video/ijkplayer-x86" />
+      <module fileurl="file://$PROJECT_DIR$/m3u8library/m3u8library.iml" filepath="$PROJECT_DIR$/m3u8library/m3u8library.iml" group="video/m3u8library" />
+      <module fileurl="file://$PROJECT_DIR$/newAv/newAv.iml" filepath="$PROJECT_DIR$/newAv/newAv.iml" group="video/newAv" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/video.iml" filepath="$PROJECT_DIR$/.idea/modules/video.iml" group="video" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:gravity="center_vertical">
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tlPlaySource"
+                android:layout_width="0dp"
+                android:layout_height="26dp"
+                android:layout_weight="1"
+                android:textColor="@color/gray_999"
+                app:tabGravity="fill"
+                app:tabIndicatorFullWidth="false"
+                app:tabIndicatorHeight="0dp"
+                app:tabMinWidth="4dp"
+                app:tabMode="scrollable"
+                app:tabPaddingEnd="10dp"
+                app:tabPaddingStart="1dp"
+                app:tabRippleColor="@android:color/transparent"
+                app:tabSelectedTextColor="@color/hotPink"
+                app:tabTextAppearance="@style/MyTabLayoutTextAppearance3"
+                app:tabTextColor="@color/gray_999"
+                tools:ignore="RtlSymmetry" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:background="@drawable/bg_skip4"
+                android:gravity="center"
+                android:paddingStart="10dp"
+                android:paddingEnd="1dp">
+
+                <TextView
+                    android:id="@+id/tv_av_danmaku2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingEnd="5dp"
+                    android:textColor="@color/black"
+                    android:text="@string/av_danmaku"
+                    android:textSize="11sp"
+                    tools:ignore="RtlSymmetry" />
+
+                <LinearLayout
+                    android:layout_width="36dp"
+                    android:layout_height="26dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="@drawable/bg_skip3"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/danmu" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_marginTop="5dp"
+        android:background="@color/lineColor" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_10">
+
+<!--        <ImageView
+            android:id="@+id/vodPic"
+            android:layout_width="60.0dip"
+            android:layout_height="80.0dip"
+            android:layout_marginEnd="10.0dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/vod_pic_img" />-->
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/item_tv_playinfo_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_larger"
+                android:textStyle="bold"
+                tools:text="斛珠夫人" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-25dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/textColor6"
+                    android:textSize="@dimen/font_small"
+                    tools:ignore="SpUsage"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="5dp"
+                    android:text=" " />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/textColor6"
+                    android:textSize="@dimen/font_small"
+                    tools:ignore="SpUsage" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="5dp"
+                    android:text=" " />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:includeFontPadding="false"
+                    android:singleLine="true"
+                    android:textColor="@color/textColor6"
+                    android:textSize="@dimen/font_small"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="5dp"
+                    android:text=" " />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_vertical"
+                    android:includeFontPadding="false"
+                    android:singleLine="true"
+                    android:textColor="@color/hotPink"
+                    android:textSize="@dimen/font_small" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/item_tv_playinfo_collects"
+                    android:layout_width="wrap_content"
+                    android:layout_height="43dp"
+                    android:layout_gravity="center_vertical"
+                    android:foreground="?selectableItemBackground"
+                    android:includeFontPadding="false"
+                    android:drawableTop="@drawable/ico_sryy"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="76dp"
+                    android:layout_height="20dp"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/ic_yspd" />
+
+                <View
+                    android:layout_width="0.8dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@color/black" />
+
+                <TextView
+                    android:id="@+id/item_svv_playinfo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="爱情·古装·国产"
+                    android:textColor="@color/gray_999"
+                    android:textSize="@dimen/font_smaller"
+                    android:textStyle="normal" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/item_tv_playinfo_hits"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/gray_999"
+                    android:textSize="@dimen/font_small"
+                    tools:ignore="SpUsage"
+                    tools:text="699" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="5dp"
+                    android:text=" " />
+
+                <TextView
+                    android:id="@+id/item_tv_playinfo_tvyear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="未知"
+                    android:textColor="@color/gray_999"
+                    android:textSize="@dimen/font_small"
+                    tools:ignore="SpUsage" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="5dp"
+                    android:text=" " />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/item_tv_playinfo_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:includeFontPadding="false"
+                    android:singleLine="true"
+                    android:textColor="@color/gray_999"
+                    android:textSize="@dimen/font_small"
+                    tools:text="5.9分" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="5dp"
+                    android:text=" " />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/item_tv_playinfo_grade"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_vertical"
+                    android:includeFontPadding="false"
+                    android:singleLine="true"
+                    android:text="我要评分"
+                    android:textColor="@color/hotPink"
+                    android:textSize="@dimen/font_small" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/item_tv_playinfo_intro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:foreground="?selectableItemBackground"
+                    android:includeFontPadding="false"
+                    android:text="详情"
+                    android:textColor="@color/gray_999"
+                    android:textSize="@dimen/font_small"
+                    android:textStyle="normal" />
+
+                <ImageView
+                    android:layout_width="16.0dip"
+                    android:layout_height="16.0dip"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/ic_enter" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_play_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/rlComment"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left|center_vertical"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/ic_comment2"
+            android:drawablePadding="7dp"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:maxLength="7"
+            android:text="评论"
+            android:textColor="@color/textColor6"
+            android:textSize="@dimen/font_smallest" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/item_tv_playinfo_collect"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/ic_collection2"
+            android:drawablePadding="7dp"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="@string/collect"
+            android:textColor="@color/textColor6"
+            android:textSize="@dimen/font_smallest" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/item_tv_playinfo_download"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/ic_download2"
+            android:drawablePadding="7dp"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="@string/download"
+            android:textColor="@color/textColor6"
+            android:textSize="@dimen/font_smallest" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/item_tv_playinfo_feedback"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/ic_feedback2"
+            android:drawablePadding="7dp"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="@string/feedback"
+            android:textColor="@color/textColor6"
+            android:textSize="@dimen/font_smallest" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/item_tv_playinfo_share"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/ic_share2"
+            android:drawablePadding="7dp"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="@string/share"
+            android:textColor="@color/textColor6"
+            android:textSize="@dimen/font_smallest" />
+    </LinearLayout>
+
+    <!-- 播放源和选集-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/select_play_resource"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/font_larges"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/checkOrder"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/selector_order"
+                android:button="@null"
+                android:gravity="center"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tvLastest"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:paddingStart="@dimen/dp_10"
+                    android:text="更新至30/32集"
+                    android:textColor="@color/gray_999"
+                    android:textSize="@dimen/font_small" />
+
+                <ImageView
+                    android:id="@+id/iv_lastest"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginLeft="4dp"
+                    android:background="@drawable/ic_enter" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/select_play_resource1"
+            android:textColor="@color/gray_999"
+            android:textSize="@dimen/font_small" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvLastest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="6dp"
+            android:scrollbars="none"
+            tools:layoutManager="LinearLayoutManager"
+            tools:listitem="@layout/item_video_source"
+            tools:orientation="horizontal" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/ll_play_comment"
+        android:layout_marginTop="2dp"
+        android:background="@color/lineColor" />
+
+    <cn.lvdou.vod.ad.AdWebView
+        android:id="@+id/awvPlayerDown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <FrameLayout
+        android:id="@+id/ad_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+</LinearLayout>
